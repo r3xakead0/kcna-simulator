@@ -1,5 +1,4 @@
 {
-  "url": "https://www.examtopics.com/discussions/linux-foundation/view/157427-exam-kcna-topic-1-question-140-discussion/",
   "published_iso": "2025-03-02T18:14:00",
   "number": 140,
   "question": "If a Pod was waiting for container images to download on the scheduled node, what state would it be in?",

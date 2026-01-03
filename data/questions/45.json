@@ -1,5 +1,4 @@
 {
-  "url": "https://www.examtopics.com/discussions/linux-foundation/view/306763-exam-kcna-topic-1-question-176-discussion/",
   "published_iso": "2025-07-18T03:53:00",
   "number": 176,
   "question": "What happens with a regular pod running in Kubernetes when a node fails?",

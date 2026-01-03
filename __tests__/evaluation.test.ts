@@ -4,7 +4,6 @@ import type { Question } from "@/types/exam";
 
 const sampleQuestions: Question[] = [
   {
-    url: "https://example.com/q1",
     published_iso: "2024-01-01T00:00:00Z",
     number: 1,
     question: "Sample single choice",
@@ -15,7 +14,6 @@ const sampleQuestions: Question[] = [
     answers: { platform: ["B"], community: ["B"] },
   },
   {
-    url: "https://example.com/q2",
     published_iso: "2024-01-02T00:00:00Z",
     number: 2,
     question: "Sample multi choice",

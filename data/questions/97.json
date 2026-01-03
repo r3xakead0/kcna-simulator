@@ -1,12 +1,11 @@
 {
-  "url": "https://www.examtopics.com/discussions/linux-foundation/view/157340-exam-kcna-topic-1-question-114-discussion/",
   "published_iso": "2025-03-01T16:18:00",
   "number": 114,
   "question": "What is the difference between a Deployment and a ReplicaSet?",
   "options": [
     {
       "key": "A",
-      "text": "With a Deployment, you can’t control the number of pod replicas."
+      "text": "With a Deployment, you can\u2019t control the number of pod replicas."
     },
     {
       "key": "B",

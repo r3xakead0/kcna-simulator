@@ -9,7 +9,6 @@ export type QuestionOption = {
 };
 
 export type Question = {
-  url: string;
   published_iso: string;
   number: number;
   question: string;

@@ -1,5 +1,4 @@
 {
-  "url": "https://www.examtopics.com/discussions/linux-foundation/view/306762-exam-kcna-topic-1-question-177-discussion/",
   "published_iso": "2025-07-18T03:53:00",
   "number": 177,
   "question": "What is the minimum of etcd members that are required for a highly available Kubernetes cluster?",

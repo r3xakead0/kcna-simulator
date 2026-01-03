@@ -1,5 +1,4 @@
 {
-  "url": "https://www.examtopics.com/discussions/linux-foundation/view/136898-exam-kcna-topic-1-question-3-discussion/",
   "published_iso": "2024-03-22T03:33:00",
   "number": 3,
   "question": "A CronJob is scheduled to run by a user every one hour. What happens in the cluster when it's time for this CronJob to run?",

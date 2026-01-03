@@ -1,5 +1,4 @@
 {
-  "url": "https://www.examtopics.com/discussions/linux-foundation/view/157332-exam-kcna-topic-1-question-106-discussion/",
   "published_iso": "2025-03-01T15:44:00",
   "number": 106,
   "question": "What does the \"nodeSelector\" within a PodSpec use to place Pods on the target nodes?",

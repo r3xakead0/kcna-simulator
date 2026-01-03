@@ -1,5 +1,4 @@
 {
-  "url": "https://www.examtopics.com/discussions/linux-foundation/view/119245-exam-kcna-topic-1-question-24-discussion/",
   "published_iso": "2023-08-28T15:31:00",
   "number": 24,
   "question": "We can extend the Kubernetes API with Kubernetes API Aggregation Layer and CRDs. What is CRD?",

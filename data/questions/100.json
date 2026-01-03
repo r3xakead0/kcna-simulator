@@ -1,5 +1,4 @@
 {
-  "url": "https://www.examtopics.com/discussions/linux-foundation/view/154446-exam-kcna-topic-1-question-110-discussion/",
   "published_iso": "2025-01-12T22:01:00",
   "number": 110,
   "question": "Which tools enable Kubernetes HorizontalPodAutoscalers to use custom, application-generated metrics to trigger scaling events?",

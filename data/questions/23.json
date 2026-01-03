@@ -1,5 +1,4 @@
 {
-  "url": "https://www.examtopics.com/discussions/linux-foundation/view/306735-exam-kcna-topic-1-question-170-discussion/",
   "published_iso": "2025-07-18T03:50:00",
   "number": 170,
   "question": "Which control plane component is responsible for updating the node Ready condition if a node becomes unreachable?",

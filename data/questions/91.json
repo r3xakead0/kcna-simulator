@@ -1,5 +1,4 @@
 {
-  "url": "https://www.examtopics.com/discussions/linux-foundation/view/150237-exam-kcna-topic-1-question-126-discussion/",
   "published_iso": "2024-10-25T11:35:00",
   "number": 126,
   "question": "Which of the following is the correct command to run a nginx deployment with 2 replicas?",
@@ -14,7 +13,7 @@
     },
     {
       "key": "C",
-      "text": "kubectl create nginx deployment --image=nginx –replicas=2"
+      "text": "kubectl create nginx deployment --image=nginx \u2013replicas=2"
     },
     {
       "key": "D",

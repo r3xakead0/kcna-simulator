@@ -1,5 +1,4 @@
 {
-  "url": "https://www.examtopics.com/discussions/linux-foundation/view/154445-exam-kcna-topic-1-question-104-discussion/",
   "published_iso": "2025-01-12T21:52:00",
   "number": 104,
   "question": "What Linux namespace is shared by default by containers running within a Kubernetes Pod?",

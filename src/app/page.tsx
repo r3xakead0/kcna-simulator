@@ -1,16 +1,18 @@
 "use client";
 
 import { useEffect, useMemo, useState } from "react";
+import { useRouter } from "next/navigation";
 import { AlertCircle, CheckCircle2, Loader2, ShieldCheck } from "lucide-react";
+import { ThemeToggle } from "@/components/theme-toggle";
 import { evaluateAnswers } from "@/lib/evaluation";
 import { getCorrectKeys } from "@/lib/questions";
+import { RESULTS_STORAGE_KEY, USER_STORAGE_KEY } from "@/lib/constants";
 import type {
   AnswerSheet,
   EvaluationResult,
   Question,
   UserRecord,
 } from "@/types/exam";
-import { ThemeToggle } from "@/components/theme-toggle";
 
 type AuthenticatedUser = Pick<UserRecord, "username" | "name" | "role">;
 const PAGE_SIZE = 1;
@@ -25,6 +27,19 @@ export default function Home() {
   const [questionLoading, setQuestionLoading] = useState(false);
   const [submitError, setSubmitError] = useState<string | null>(null);
   const [currentPage, setCurrentPage] = useState(1);
+  const router = useRouter();
+
+  useEffect(() => {
+    if (typeof window === "undefined") return;
+    const storedUser = localStorage.getItem(USER_STORAGE_KEY);
+    if (storedUser) {
+      try {
+        setUser(JSON.parse(storedUser) as AuthenticatedUser);
+      } catch {
+        localStorage.removeItem(USER_STORAGE_KEY);
+      }
+    }
+  }, []);
 
   useEffect(() => {
     setAnswers({});
@@ -39,6 +54,9 @@ export default function Home() {
     setEvaluation(null);
     setSubmitError(null);
     setCurrentPage(1);
+    if (typeof window !== "undefined") {
+      localStorage.removeItem(USER_STORAGE_KEY);
+    }
   };
 
   const completion = useMemo(() => {
@@ -75,6 +93,9 @@ export default function Home() {
 
       const payload = (await response.json()) as AuthenticatedUser;
       setUser(payload);
+      if (typeof window !== "undefined") {
+        localStorage.setItem(USER_STORAGE_KEY, JSON.stringify(payload));
+      }
     } catch (error) {
       setLoginError((error as Error).message);
     } finally {
@@ -123,6 +144,13 @@ export default function Home() {
     setSubmitError(null);
     const result = evaluateAnswers(questions, answers);
     setEvaluation(result);
+    if (typeof window !== "undefined") {
+      localStorage.setItem(
+        RESULTS_STORAGE_KEY,
+        JSON.stringify({ result, generatedAt: new Date().toISOString() }),
+      );
+    }
+    router.push("/results");
   };
 
   return (
@@ -162,70 +190,63 @@ export default function Home() {
           </div>
         </header>
 
-        <section className="grid gap-6 lg:grid-cols-[1.1fr_0.9fr]">
-          <div className="space-y-4">
-            {!user && (
-              <LoginCard
-                onSubmit={handleLogin}
-                loading={loginLoading}
-                error={loginError}
+        <section className="space-y-4">
+          {!user && (
+            <LoginCard
+              onSubmit={handleLogin}
+              loading={loginLoading}
+              error={loginError}
+            />
+          )}
+
+          {user && (
+            <ExamControlCard
+              onStart={fetchQuestions}
+              onSubmit={handleSubmit}
+              canSubmit={!!questions.length}
+              loading={questionLoading}
+              evaluation={evaluation}
+              completion={completion}
+              questionCount={questions.length}
+            />
+          )}
+
+          {submitError && (
+            <div className="flex items-center gap-2 rounded-2xl border border-red-200 bg-red-50 px-4 py-3 text-sm text-red-800 dark:border-red-900 dark:bg-red-950/60 dark:text-red-200">
+              <AlertCircle size={16} />
+              {submitError}
+            </div>
+          )}
+
+          {user && questions.length > 0 && (
+            <div className="space-y-4">
+              {pagedQuestions.map((question) => {
+                const correct = getCorrectKeys(question);
+                const isMultiple = correct.length > 1;
+                return (
+                  <QuestionCard
+                    key={question.number}
+                    question={question}
+                    selected={answers[question.number] ?? []}
+                    onSelect={(choice) =>
+                      isMultiple
+                        ? handleOptionToggle(question.number, choice)
+                        : handleOptionSelect(question.number, choice)
+                    }
+                    isMultiple={isMultiple}
+                  />
+                );
+              })}
+              <Pagination
+                currentPage={currentPage}
+                totalPages={totalPages}
+                onFirst={() => setCurrentPage(1)}
+                onPrev={() => setCurrentPage((prev) => Math.max(1, prev - 1))}
+                onNext={() => setCurrentPage((prev) => Math.min(totalPages, prev + 1))}
+                onLast={() => setCurrentPage(totalPages)}
               />
-            )}
-
-            {user && (
-              <ExamControlCard
-                onStart={fetchQuestions}
-                onSubmit={handleSubmit}
-                canSubmit={!!questions.length}
-                loading={questionLoading}
-                evaluation={evaluation}
-                completion={completion}
-                questionCount={questions.length}
-              />
-            )}
-
-            {submitError && (
-              <div className="flex items-center gap-2 rounded-2xl border border-red-200 bg-red-50 px-4 py-3 text-sm text-red-800 dark:border-red-900 dark:bg-red-950/60 dark:text-red-200">
-                <AlertCircle size={16} />
-                {submitError}
-              </div>
-            )}
-
-            {user && questions.length > 0 && (
-              <div className="space-y-4">
-                {pagedQuestions.map((question) => {
-                  const correct = getCorrectKeys(question);
-                  const isMultiple = correct.length > 1;
-                  return (
-                    <QuestionCard
-                      key={question.number}
-                      question={question}
-                      selected={answers[question.number] ?? []}
-                      onSelect={(choice) =>
-                        isMultiple
-                          ? handleOptionToggle(question.number, choice)
-                          : handleOptionSelect(question.number, choice)
-                      }
-                      isMultiple={isMultiple}
-                    />
-                  );
-                })}
-                <Pagination
-                  currentPage={currentPage}
-                  totalPages={totalPages}
-                  onFirst={() => setCurrentPage(1)}
-                  onPrev={() => setCurrentPage((prev) => Math.max(1, prev - 1))}
-                  onNext={() => setCurrentPage((prev) => Math.min(totalPages, prev + 1))}
-                  onLast={() => setCurrentPage(totalPages)}
-                />
-              </div>
-            )}
-          </div>
-
-          <aside className="space-y-4">
-            <HighlightsPanel evaluation={evaluation} completion={completion} />
-            {evaluation && <ResultsPanel evaluation={evaluation} />}
-          </aside>
+            </div>
+          )}
         </section>
       </div>
     </div>
@@ -335,7 +356,7 @@ function ExamControlCard({
         <div>
           <h2 className="text-xl font-semibold">Exam session</h2>
           <p className="text-sm text-slate-600 dark:text-slate-300">
-            {questionCountLabel} randomized questions per run.
+            {questionCountLabel} questions per run (sorted by newest first).
           </p>
         </div>
         <div className="rounded-full bg-slate-900 px-3 py-1 text-xs font-semibold text-slate-50 dark:bg-slate-700">
@@ -350,7 +371,7 @@ function ExamControlCard({
           disabled={loading}
           className="inline-flex items-center justify-center gap-2 rounded-xl bg-slate-900 px-4 py-3 text-sm font-semibold text-white shadow-md shadow-slate-400/50 transition hover:translate-y-[-1px] hover:shadow-lg disabled:cursor-not-allowed disabled:opacity-70 dark:bg-slate-800 dark:shadow-slate-950"
         >
-          {loading ? <Loader2 className="h-4 w-4 animate-spin" /> : "Load new set"}
+          {loading ? <Loader2 className="h-4 w-4 animate-spin" /> : "Load questions"}
         </button>
 
         <button
@@ -365,45 +386,10 @@ function ExamControlCard({
       </div>
 
       {evaluation && (
-        <div className="mt-4 grid grid-cols-2 gap-3 text-sm sm:grid-cols-4">
-          <Badge label="Total" value={`${evaluation.total}`} />
-          <Badge label="Correct" value={`${evaluation.correctCount}`} tone="success" />
-          <Badge
-            label="Accuracy"
-            value={`${Math.round((evaluation.correctCount / evaluation.total) * 100)}%`}
-            tone="accent"
-          />
-          <Badge
-            label="Needs review"
-            value={`${evaluation.total - evaluation.correctCount}`}
-            tone="warning"
-          />
+        <div className="mt-4 rounded-xl border border-emerald-200 bg-emerald-50 px-4 py-3 text-sm text-emerald-900 dark:border-emerald-800 dark:bg-emerald-900/40 dark:text-emerald-100">
+          Answers submitted. View your score on the Results page.
         </div>
       )}
-    </div>
-  );
-}
-
-function Badge({
-  label,
-  value,
-  tone = "default",
-}: {
-  label: string;
-  value: string;
-  tone?: "default" | "success" | "accent" | "warning";
-}) {
-  const toneClasses: Record<"default" | "success" | "accent" | "warning", string> = {
-    default: "bg-slate-100 text-slate-800 dark:bg-slate-800 dark:text-slate-100",
-    success: "bg-emerald-100 text-emerald-800 dark:bg-emerald-900/50 dark:text-emerald-100",
-    accent: "bg-blue-100 text-blue-800 dark:bg-sky-900/50 dark:text-sky-100",
-    warning: "bg-amber-100 text-amber-800 dark:bg-amber-900/50 dark:text-amber-100",
-  };
-
-  return (
-    <div className={`rounded-2xl px-4 py-3 shadow-sm ${toneClasses[tone]}`}>
-      <p className="text-xs uppercase tracking-[0.15em]">{label}</p>
-      <p className="text-lg font-semibold">{value}</p>
     </div>
   );
 }
@@ -430,15 +416,7 @@ function QuestionCard({
             {question.question}
           </h3>
           <p className="mt-1 text-xs text-slate-500 dark:text-slate-400">
-            Published {new Date(question.published_iso).toLocaleDateString()} •{" "}
-            <a
-              className="underline decoration-dotted underline-offset-4"
-              href={question.url}
-              target="_blank"
-              rel="noreferrer"
-            >
-              Source
-            </a>
+            Published {new Date(question.published_iso).toLocaleDateString()}
           </p>
         </div>
         <span className="rounded-full bg-slate-900 px-3 py-1 text-xs font-semibold text-slate-50 dark:bg-slate-800">
@@ -475,88 +453,6 @@ function QuestionCard({
         })}
       </div>
     </article>
-  );
-}
-
-function HighlightsPanel({
-  evaluation,
-  completion,
-}: {
-  evaluation: EvaluationResult | null;
-  completion: number;
-}) {
-  const stats = evaluation
-    ? {
-        label: "Score",
-        value: `${evaluation.correctCount}/${evaluation.total}`,
-        accent: "bg-gradient-to-r from-emerald-500 to-emerald-400",
-      }
-    : {
-        label: "Completion",
-        value: `${completion}%`,
-        accent: "bg-gradient-to-r from-blue-500 to-sky-400",
-      };
-
-  return (
-    <div className="overflow-hidden rounded-3xl border border-white/40 bg-card/90 shadow-lg shadow-blue-200/40 backdrop-blur dark:border-slate-800 dark:bg-slate-900/80">
-      <div className={`${stats.accent} px-6 py-4 text-white`}>
-        <p className="text-xs uppercase tracking-[0.2em] opacity-90">{stats.label}</p>
-        <p className="text-3xl font-semibold">{stats.value}</p>
-      </div>
-      <div className="space-y-3 p-6 text-sm text-slate-700 dark:text-slate-200">
-        <p>
-          Track your progress live. Submit the exam to reveal which answers were correct and which ones
-          need another look.
-        </p>
-        <ul className="list-disc space-y-2 pl-5 text-slate-600 dark:text-slate-300">
-          <li>Supports single and multiple choice items.</li>
-          <li>Dark and light modes for long study sessions.</li>
-        </ul>
-      </div>
-    </div>
-  );
-}
-
-function ResultsPanel({ evaluation }: { evaluation: EvaluationResult }) {
-  return (
-    <div className="rounded-3xl border border-emerald-200/70 bg-emerald-50/80 p-6 text-sm shadow-lg shadow-emerald-200/40 dark:border-emerald-900/70 dark:bg-emerald-950/60">
-      <h3 className="flex items-center gap-2 text-lg font-semibold text-emerald-900 dark:text-emerald-100">
-        <CheckCircle2 size={18} />
-        Results
-      </h3>
-      <p className="mt-2 text-slate-700 dark:text-emerald-50">
-        Review each item to understand what was marked correct.
-      </p>
-      <div className="mt-4 space-y-3">
-        {evaluation.rows.map((row) => (
-          <div
-            key={row.question.number}
-            className="rounded-2xl bg-white/80 p-4 shadow-sm dark:bg-slate-900/80"
-          >
-            <div className="flex items-center justify-between gap-2">
-              <p className="font-semibold text-foreground">
-                Q{row.question.number}: {row.question.question}
-              </p>
-              <span
-                className={`rounded-full px-3 py-1 text-xs font-semibold ${
-                  row.isCorrect
-                    ? "bg-emerald-100 text-emerald-800 dark:bg-emerald-900/60 dark:text-emerald-100"
-                    : "bg-amber-100 text-amber-800 dark:bg-amber-900/60 dark:text-amber-100"
-                }`}
-              >
-                {row.isCorrect ? "Correct" : "Review"}
-              </span>
-            </div>
-            <p className="mt-2 text-slate-600 dark:text-slate-300">
-              Selected: {row.selected.length ? row.selected.join(", ") : "No answer"}
-            </p>
-            <p className="text-slate-600 dark:text-slate-300">
-              Correct: {row.correct.join(", ")}
-            </p>
-          </div>
-        ))}
-      </div>
-    </div>
   );
 }
 

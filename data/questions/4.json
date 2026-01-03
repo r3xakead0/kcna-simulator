@@ -1,5 +1,4 @@
 {
-  "url": "https://www.examtopics.com/discussions/linux-foundation/view/129239-exam-kcna-topic-1-question-37-discussion/",
   "published_iso": "2023-12-22T17:24:00",
   "number": 37,
   "question": "Which Kubernetes feature would you use to guard against split brain scenarios with your distributed application?",

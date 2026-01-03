@@ -1,5 +1,4 @@
 {
-  "url": "https://www.examtopics.com/discussions/linux-foundation/view/130945-exam-kcna-topic-1-question-40-discussion/",
   "published_iso": "2024-01-12T15:32:00",
   "number": 40,
   "question": "Scenario: You have a Kubernetes cluster hosted in a public cloud provider. When trying to create a Service of type LoadBalancer, the external-ip is stuck in the \"Pending\" state. Which Kubernetes component is failing in this scenario?",

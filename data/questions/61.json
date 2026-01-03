@@ -1,24 +1,23 @@
 {
-  "url": "https://www.examtopics.com/discussions/linux-foundation/view/306737-exam-kcna-topic-1-question-163-discussion/",
   "published_iso": "2025-07-18T03:51:00",
   "number": 163,
   "question": "What is the correct hierarchy of Kubernetes components?",
   "options": [
     {
       "key": "A",
-      "text": "Containers → Pods → Cluster → Nodes"
+      "text": "Containers \u2192 Pods \u2192 Cluster \u2192 Nodes"
     },
     {
       "key": "B",
-      "text": "Nodes → Cluster → Containers → Pods"
+      "text": "Nodes \u2192 Cluster \u2192 Containers \u2192 Pods"
     },
     {
       "key": "C",
-      "text": "Cluster → Nodes → Pods → Containers"
+      "text": "Cluster \u2192 Nodes \u2192 Pods \u2192 Containers"
     },
     {
       "key": "D",
-      "text": "Pods → Cluster → Containers → Nodes"
+      "text": "Pods \u2192 Cluster \u2192 Containers \u2192 Nodes"
     }
   ],
   "answers": {

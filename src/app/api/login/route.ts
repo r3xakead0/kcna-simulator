@@ -23,6 +23,5 @@ export async function POST(request: Request) {
   return NextResponse.json({
     username: user.username,
     name: user.name,
-    role: user.role,
   });
 }

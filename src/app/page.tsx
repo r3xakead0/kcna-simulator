@@ -3,7 +3,6 @@
 import { useEffect, useMemo, useState } from "react";
 import { useRouter } from "next/navigation";
 import { AlertCircle, CheckCircle2, Loader2, ShieldCheck } from "lucide-react";
-import { ThemeToggle } from "@/components/theme-toggle";
 import { evaluateAnswers } from "@/lib/evaluation";
 import { getCorrectKeys } from "@/lib/questions";
 import { RESULTS_STORAGE_KEY, USER_STORAGE_KEY } from "@/lib/constants";
@@ -14,7 +13,7 @@ import type {
   UserRecord,
 } from "@/types/exam";
 
-type AuthenticatedUser = Pick<UserRecord, "username" | "name" | "role">;
+type AuthenticatedUser = Pick<UserRecord, "username" | "name">;
 const PAGE_SIZE = 1;
 
 export default function Home() {
@@ -161,18 +160,17 @@ export default function Home() {
             <p className="text-sm uppercase tracking-[0.2em] text-blue-600 dark:text-sky-400">
               KCNA Simulation
             </p>
-            <h1 className="text-3xl font-semibold">Linux Foundation KCNA Exam Lab</h1>
+            <h1 className="text-3xl font-semibold">Linux Foundation - KCNA Exam</h1>
             <p className="max-w-3xl text-sm text-slate-600 dark:text-slate-300">
-              Practice with curated KCNA-style questions, review your answers instantly, and switch between light and dark modes for long study sessions.
+              Practice with curated KCNA-style questions and review your answers instantly.
             </p>
           </div>
-          <div className="flex flex-col gap-3 sm:items-end">
-            <ThemeToggle />
+          <div className="flex flex-col gap-2 sm:items-end">
             {user ? (
               <div className="flex flex-wrap items-center gap-3">
                 <div className="inline-flex items-center gap-2 rounded-full bg-slate-100 px-3 py-1 text-sm font-medium text-slate-700 shadow dark:bg-slate-800 dark:text-slate-200">
                   <ShieldCheck size={16} />
-                  {user.name} ({user.role})
+                  {user.name}
                 </div>
                 <button
                   type="button"

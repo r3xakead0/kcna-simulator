@@ -1,9 +1,10 @@
-import { validateUserCredentials } from "@/lib/users";
+import { loadUsersFromDisk, validateUserCredentials } from "@/lib/users";
 
 describe("validateUserCredentials", () => {
   it("returns matching user when credentials are correct", async () => {
-    const user = await validateUserCredentials("demo", "kcna2024!");
-    expect(user?.name).toBe("Demo Candidate");
+    const [firstUser] = await loadUsersFromDisk();
+    const user = await validateUserCredentials(firstUser.username, firstUser.password);
+    expect(user?.name).toBe(firstUser.name);
   });
 
   it("returns null when credentials do not match", async () => {

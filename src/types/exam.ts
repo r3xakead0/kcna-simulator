@@ -20,7 +20,6 @@ export type UserRecord = {
   username: string;
   password: string;
   name: string;
-  role: "candidate" | "admin";
 };
 
 export type AnswerSheet = Record<number, string[]>;

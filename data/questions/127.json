@@ -1,0 +1,32 @@
+{
+  "url": "https://www.examtopics.com/discussions/linux-foundation/view/157296-exam-kcna-topic-1-question-75-discussion/",
+  "published_iso": "2025-03-01T04:48:00",
+  "number": 75,
+  "question": "How do you deploy a workload to Kubernetes without additional tools?",
+  "options": [
+    {
+      "key": "A",
+      "text": "Create a Bash script and run it on a worker node."
+    },
+    {
+      "key": "B",
+      "text": "Create a Helm Chart and install it with helm."
+    },
+    {
+      "key": "C",
+      "text": "Create a manifest and apply it with kubectl."
+    },
+    {
+      "key": "D",
+      "text": "Create a Python script and run it with kubectl."
+    }
+  ],
+  "answers": {
+    "platform": [
+      "C"
+    ],
+    "community": [
+      "C"
+    ]
+  }
+}

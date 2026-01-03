@@ -1,0 +1,32 @@
+{
+  "url": "https://www.examtopics.com/discussions/linux-foundation/view/157425-exam-kcna-topic-1-question-137-discussion/",
+  "published_iso": "2025-03-02T18:08:00",
+  "number": 137,
+  "question": "What framework does Kubernetes use to authenticate users with JSON Web Tokens?",
+  "options": [
+    {
+      "key": "A",
+      "text": "OpenID Connect"
+    },
+    {
+      "key": "B",
+      "text": "OpenID Container"
+    },
+    {
+      "key": "C",
+      "text": "OpenID Cluster"
+    },
+    {
+      "key": "D",
+      "text": "OpenID CNCF"
+    }
+  ],
+  "answers": {
+    "platform": [
+      "A"
+    ],
+    "community": [
+      "A"
+    ]
+  }
+}

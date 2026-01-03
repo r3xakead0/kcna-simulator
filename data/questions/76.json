@@ -1,0 +1,32 @@
+{
+  "url": "https://www.examtopics.com/discussions/linux-foundation/view/157519-exam-kcna-topic-1-question-151-discussion/",
+  "published_iso": "2025-03-04T16:50:00",
+  "number": 151,
+  "question": "Which of the following scenarios would benefit the most from a service mesh architecture?",
+  "options": [
+    {
+      "key": "A",
+      "text": "A few applications with hundreds of pod replicas running in multiple clusters, each one providing multiple services."
+    },
+    {
+      "key": "B",
+      "text": "Thousands of distributed applications running in a single cluster, each one providing multiple services."
+    },
+    {
+      "key": "C",
+      "text": "Tens of distributed applications running in multiple clusters, each one providing multiple services."
+    },
+    {
+      "key": "D",
+      "text": "Thousands of distributed applications running in multiple clusters, each one providing multiple services."
+    }
+  ],
+  "answers": {
+    "platform": [
+      "D"
+    ],
+    "community": [
+      "D"
+    ]
+  }
+}

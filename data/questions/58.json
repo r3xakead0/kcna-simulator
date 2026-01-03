@@ -1,0 +1,32 @@
+{
+  "url": "https://www.examtopics.com/discussions/linux-foundation/view/306742-exam-kcna-topic-1-question-195-discussion/",
+  "published_iso": "2025-07-18T03:51:00",
+  "number": 195,
+  "question": "Which of the following is a recommended security habit in Kubernetes?",
+  "options": [
+    {
+      "key": "A",
+      "text": "Run the containers as the user with group ID 0 (root) and any user ID."
+    },
+    {
+      "key": "B",
+      "text": "Disallow privilege escalation from within a container as the default option."
+    },
+    {
+      "key": "C",
+      "text": "Run the containers as the user with user ID 0 (root) and any group ID."
+    },
+    {
+      "key": "D",
+      "text": "Allow privilege escalation from within a container as the default option."
+    }
+  ],
+  "answers": {
+    "platform": [
+      "B"
+    ],
+    "community": [
+      "B"
+    ]
+  }
+}

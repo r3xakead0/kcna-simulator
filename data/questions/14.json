@@ -1,0 +1,32 @@
+{
+  "url": "https://www.examtopics.com/discussions/linux-foundation/view/306758-exam-kcna-topic-1-question-184-discussion/",
+  "published_iso": "2025-07-18T03:53:00",
+  "number": 184,
+  "question": "What is a cloud native application?",
+  "options": [
+    {
+      "key": "A",
+      "text": "It is a monolithic application that has been containerized and is running now on the cloud."
+    },
+    {
+      "key": "B",
+      "text": "It is an application designed to be scalable and take advantage of services running on the cloud."
+    },
+    {
+      "key": "C",
+      "text": "It is an application designed to run all its functions in separate containers."
+    },
+    {
+      "key": "D",
+      "text": "It is any application that runs in a cloud provider and uses its services."
+    }
+  ],
+  "answers": {
+    "platform": [
+      "B"
+    ],
+    "community": [
+      "B"
+    ]
+  }
+}

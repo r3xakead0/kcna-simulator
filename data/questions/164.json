@@ -1,0 +1,32 @@
+{
+  "url": "https://www.examtopics.com/discussions/linux-foundation/view/120919-exam-kcna-topic-1-question-22-discussion/",
+  "published_iso": "2023-09-18T15:53:00",
+  "number": 22,
+  "question": "What is the core functionality of GitOps tools like Argo CD and Flux?",
+  "options": [
+    {
+      "key": "A",
+      "text": "They track production changes made by a human in a Git repository and generate a human-readable audit trail."
+    },
+    {
+      "key": "B",
+      "text": "They replace human operations with an agent that tracks Git commands."
+    },
+    {
+      "key": "C",
+      "text": "They automatically create pull requests when dependencies are outdated."
+    },
+    {
+      "key": "D",
+      "text": "They continuously compare the desired state in Git with the actual production state and notify or act upon differences."
+    }
+  ],
+  "answers": {
+    "platform": [
+      "D"
+    ],
+    "community": [
+      "D"
+    ]
+  }
+}

@@ -1,0 +1,32 @@
+{
+  "url": "https://www.examtopics.com/discussions/linux-foundation/view/157429-exam-kcna-topic-1-question-135-discussion/",
+  "published_iso": "2025-03-02T18:19:00",
+  "number": 135,
+  "question": "What's the difference between a security profile and a security context?",
+  "options": [
+    {
+      "key": "A",
+      "text": "Security Contexts configure Clusters and Namespaces at runtime. Security profiles are control plane mechanisms to enforce specific settings in the Security Context."
+    },
+    {
+      "key": "B",
+      "text": "Security Contexts configure Pods and Containers at runtime. Security profiles are control plane mechanisms to enforce specific settings in the Security Context."
+    },
+    {
+      "key": "C",
+      "text": "Security Profiles configure Pods and Containers at runtime. Security Contexts are control plane mechanisms to enforce specific settings in the Security Profile."
+    },
+    {
+      "key": "D",
+      "text": "Security Profiles configure Clusters and Namespaces at runtime. Security Contexts are control plane mechanisms to enforce specific settings in the Security Profile."
+    }
+  ],
+  "answers": {
+    "platform": [
+      "B"
+    ],
+    "community": [
+      "B"
+    ]
+  }
+}

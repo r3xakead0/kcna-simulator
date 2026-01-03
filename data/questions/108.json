@@ -1,0 +1,32 @@
+{
+  "url": "https://www.examtopics.com/discussions/linux-foundation/view/154444-exam-kcna-topic-1-question-102-discussion/",
+  "published_iso": "2025-01-12T21:50:00",
+  "number": 102,
+  "question": "Which resource do you use to attach a volume in a Pod?",
+  "options": [
+    {
+      "key": "A",
+      "text": "StorageVolume"
+    },
+    {
+      "key": "B",
+      "text": "PersistentVolume"
+    },
+    {
+      "key": "C",
+      "text": "StorageClass"
+    },
+    {
+      "key": "D",
+      "text": "PersistentVolumeClaim"
+    }
+  ],
+  "answers": {
+    "platform": [
+      "D"
+    ],
+    "community": [
+      "D"
+    ]
+  }
+}

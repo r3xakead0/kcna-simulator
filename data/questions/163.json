@@ -1,0 +1,32 @@
+{
+  "url": "https://www.examtopics.com/discussions/linux-foundation/view/119244-exam-kcna-topic-1-question-23-discussion/",
+  "published_iso": "2023-08-28T15:21:00",
+  "number": 23,
+  "question": "Which Kubernetes resource workload ensures that all (or some) nodes run a copy of a Pod?",
+  "options": [
+    {
+      "key": "A",
+      "text": "ReplicaSet"
+    },
+    {
+      "key": "B",
+      "text": "StatefulSet"
+    },
+    {
+      "key": "C",
+      "text": "DaemonSet"
+    },
+    {
+      "key": "D",
+      "text": "Deployment"
+    }
+  ],
+  "answers": {
+    "platform": [
+      "C"
+    ],
+    "community": [
+      "C"
+    ]
+  }
+}

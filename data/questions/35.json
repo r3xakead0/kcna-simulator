@@ -1,0 +1,32 @@
+{
+  "url": "https://www.examtopics.com/discussions/linux-foundation/view/157344-exam-kcna-topic-1-question-117-discussion/",
+  "published_iso": "2025-03-01T16:23:00",
+  "number": 117,
+  "question": "Which of the following is a correct definition of a Helm chart?",
+  "options": [
+    {
+      "key": "A",
+      "text": "A Helm chart is a collection of YAML files bundled in a tar.gz file and can be applied without decompressing it."
+    },
+    {
+      "key": "B",
+      "text": "A Helm chart is a collection of JSON files and contains all the resource definitions to run an application on Kubernetes."
+    },
+    {
+      "key": "C",
+      "text": "A Helm chart is a collection of YAML files that can be applied on Kubernetes by using the kubectl tool."
+    },
+    {
+      "key": "D",
+      "text": "A Helm chart is similar to a package and contains all the resource definitions to run an application on Kubernetes."
+    }
+  ],
+  "answers": {
+    "platform": [
+      "D"
+    ],
+    "community": [
+      "D"
+    ]
+  }
+}

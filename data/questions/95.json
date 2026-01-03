@@ -1,0 +1,32 @@
+{
+  "url": "https://www.examtopics.com/discussions/linux-foundation/view/157343-exam-kcna-topic-1-question-116-discussion/",
+  "published_iso": "2025-03-01T16:22:00",
+  "number": 116,
+  "question": "Which authorization-mode allows granular control over the operations that different entities can perform on different objects in a Kubernetes cluster?",
+  "options": [
+    {
+      "key": "A",
+      "text": "Webhook Mode Authorization Control"
+    },
+    {
+      "key": "B",
+      "text": "Role Based Access Control"
+    },
+    {
+      "key": "C",
+      "text": "Node Authorization Access Control"
+    },
+    {
+      "key": "D",
+      "text": "Attribute Based Access Control"
+    }
+  ],
+  "answers": {
+    "platform": [
+      "B"
+    ],
+    "community": [
+      "B"
+    ]
+  }
+}

@@ -1,0 +1,32 @@
+{
+  "url": "https://www.examtopics.com/discussions/linux-foundation/view/119240-exam-kcna-topic-1-question-18-discussion/",
+  "published_iso": "2023-08-28T15:17:00",
+  "number": 18,
+  "question": "Which of the following workload require a headless service while deploying into the namespace?",
+  "options": [
+    {
+      "key": "A",
+      "text": "StatefulSet"
+    },
+    {
+      "key": "B",
+      "text": "CronJob"
+    },
+    {
+      "key": "C",
+      "text": "Deployment"
+    },
+    {
+      "key": "D",
+      "text": "DaemonSet"
+    }
+  ],
+  "answers": {
+    "platform": [
+      "A"
+    ],
+    "community": [
+      "A"
+    ]
+  }
+}

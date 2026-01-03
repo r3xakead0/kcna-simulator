@@ -1,0 +1,32 @@
+{
+  "url": "https://www.examtopics.com/discussions/linux-foundation/view/157327-exam-kcna-topic-1-question-100-discussion/",
+  "published_iso": "2025-03-01T15:34:00",
+  "number": 100,
+  "question": "Which of these events will cause the kube-scheduler to assign a Pod to a node?",
+  "options": [
+    {
+      "key": "A",
+      "text": "When the Pod crashes because of an error."
+    },
+    {
+      "key": "B",
+      "text": "When a new node is added to the Kubernetes cluster."
+    },
+    {
+      "key": "C",
+      "text": "When the CPU load on the node becomes too high."
+    },
+    {
+      "key": "D",
+      "text": "When a new Pod is created and has no assigned node."
+    }
+  ],
+  "answers": {
+    "platform": [
+      "D"
+    ],
+    "community": [
+      "D"
+    ]
+  }
+}

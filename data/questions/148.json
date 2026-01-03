@@ -1,0 +1,32 @@
+{
+  "url": "https://www.examtopics.com/discussions/linux-foundation/view/132543-exam-kcna-topic-1-question-46-discussion/",
+  "published_iso": "2024-01-31T10:25:00",
+  "number": 46,
+  "question": "Which of these components is part of the Kubernetes Control Plane?",
+  "options": [
+    {
+      "key": "A",
+      "text": "coredns"
+    },
+    {
+      "key": "B",
+      "text": "cloud-controller-manager"
+    },
+    {
+      "key": "C",
+      "text": "kube-proxy"
+    },
+    {
+      "key": "D",
+      "text": "kubelet"
+    }
+  ],
+  "answers": {
+    "platform": [
+      "B"
+    ],
+    "community": [
+      "B"
+    ]
+  }
+}

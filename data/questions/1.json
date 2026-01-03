@@ -1,16 +1,32 @@
 {
-  "url": "https://www.examtopics.com/discussions/linux-foundation/view/119238-exam-kcna-topic-1-question-15-discussion/",
-  "published_iso": "2023-08-28T15:14:00",
-  "number": 1,
-  "question": "In a cloud native world, what does the IaC abbreviation stand for?",
+  "url": "https://www.examtopics.com/discussions/linux-foundation/view/118205-exam-kcna-topic-1-question-11-discussion/",
+  "published_iso": "2023-08-15T23:35:00",
+  "number": 11,
+  "question": "How long should a stable API element in Kubernetes be supported (at minimum) after deprecation?",
   "options": [
-    { "key": "A", "text": "Infrastructure and Code" },
-    { "key": "B", "text": "Infrastructure as Code" },
-    { "key": "C", "text": "Infrastructure above Code" },
-    { "key": "D", "text": "Infrastructure across Code" }
+    {
+      "key": "A",
+      "text": "9 months"
+    },
+    {
+      "key": "B",
+      "text": "24 months"
+    },
+    {
+      "key": "C",
+      "text": "12 months"
+    },
+    {
+      "key": "D",
+      "text": "6 months"
+    }
   ],
   "answers": {
-    "platform": ["B"],
-    "community": ["B"]
+    "platform": [
+      "C"
+    ],
+    "community": [
+      "C"
+    ]
   }
 }

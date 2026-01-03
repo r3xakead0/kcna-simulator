@@ -1,0 +1,32 @@
+{
+  "url": "https://www.examtopics.com/discussions/linux-foundation/view/119237-exam-kcna-topic-1-question-14-discussion/",
+  "published_iso": "2023-08-28T15:13:00",
+  "number": 14,
+  "question": "Which of the following statements is correct concerning Open Policy Agent (OPA)?",
+  "options": [
+    {
+      "key": "A",
+      "text": "The policies must be written in Python language."
+    },
+    {
+      "key": "B",
+      "text": "Kubernetes can use it to validate requests and apply policies."
+    },
+    {
+      "key": "C",
+      "text": "Policies can only be tested when published."
+    },
+    {
+      "key": "D",
+      "text": "It cannot be used outside Kubernetes."
+    }
+  ],
+  "answers": {
+    "platform": [
+      "B"
+    ],
+    "community": [
+      "B"
+    ]
+  }
+}

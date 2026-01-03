@@ -1,0 +1,32 @@
+{
+  "url": "https://www.examtopics.com/discussions/linux-foundation/view/128626-exam-kcna-topic-1-question-31-discussion/",
+  "published_iso": "2023-12-15T09:36:00",
+  "number": 31,
+  "question": "What components are common in a service mesh?",
+  "options": [
+    {
+      "key": "A",
+      "text": "tracing and log storage"
+    },
+    {
+      "key": "B",
+      "text": "circuit breaking and Pod scheduling"
+    },
+    {
+      "key": "C",
+      "text": "data plane and runtime plane"
+    },
+    {
+      "key": "D",
+      "text": "service proxy and control plane"
+    }
+  ],
+  "answers": {
+    "platform": [
+      "D"
+    ],
+    "community": [
+      "D"
+    ]
+  }
+}

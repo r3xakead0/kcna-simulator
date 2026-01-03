@@ -1,0 +1,32 @@
+{
+  "url": "https://www.examtopics.com/discussions/linux-foundation/view/136908-exam-kcna-topic-1-question-30-discussion/",
+  "published_iso": "2024-03-22T07:53:00",
+  "number": 30,
+  "question": "What best describes cloud native service discovery?",
+  "options": [
+    {
+      "key": "A",
+      "text": "It's a mechanism for applications and microservices to locate each other on a network."
+    },
+    {
+      "key": "B",
+      "text": "It's a procedure for discovering a MAC address, associated with a given IP address."
+    },
+    {
+      "key": "C",
+      "text": "It's used for automatically assigning IP addresses to devices connected to the network."
+    },
+    {
+      "key": "D",
+      "text": "It's a protocol that turns human-readable domain names into IP addresses on the Internet."
+    }
+  ],
+  "answers": {
+    "platform": [
+      "A"
+    ],
+    "community": [
+      "A"
+    ]
+  }
+}

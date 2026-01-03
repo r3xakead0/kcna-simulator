@@ -1,0 +1,32 @@
+{
+  "url": "https://www.examtopics.com/discussions/linux-foundation/view/119238-exam-kcna-topic-1-question-15-discussion/",
+  "published_iso": "2023-08-28T15:14:00",
+  "number": 15,
+  "question": "In a cloud native world, what does the IaC abbreviation stands for?",
+  "options": [
+    {
+      "key": "A",
+      "text": "Infrastructure and Code"
+    },
+    {
+      "key": "B",
+      "text": "Infrastructure as Code"
+    },
+    {
+      "key": "C",
+      "text": "Infrastructure above Code"
+    },
+    {
+      "key": "D",
+      "text": "Infrastructure across Code"
+    }
+  ],
+  "answers": {
+    "platform": [
+      "B"
+    ],
+    "community": [
+      "B"
+    ]
+  }
+}

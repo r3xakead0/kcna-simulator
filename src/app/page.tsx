@@ -14,8 +14,6 @@ import { ThemeToggle } from "@/components/theme-toggle";
 
 type AuthenticatedUser = Pick<UserRecord, "username" | "name" | "role">;
 
-const QUESTION_COUNT = 5;
-
 export default function Home() {
   const [user, setUser] = useState<AuthenticatedUser | null>(null);
   const [loginError, setLoginError] = useState<string | null>(null);
@@ -30,6 +28,14 @@ export default function Home() {
     setAnswers({});
     setEvaluation(null);
   }, [questions]);
+
+  const handleLogout = () => {
+    setUser(null);
+    setQuestions([]);
+    setAnswers({});
+    setEvaluation(null);
+    setSubmitError(null);
+  };
 
   const completion = useMemo(() => {
     if (!questions.length) return 0;
@@ -71,7 +77,7 @@ export default function Home() {
     setEvaluation(null);
     setAnswers({});
     try {
-      const response = await fetch(`/api/questions?count=${QUESTION_COUNT}`);
+      const response = await fetch("/api/questions");
       if (!response.ok) {
         throw new Error("Unable to load questions.");
       }
@@ -124,9 +130,18 @@ export default function Home() {
           <div className="flex flex-col gap-3 sm:items-end">
             <ThemeToggle />
             {user ? (
-              <div className="inline-flex items-center gap-2 rounded-full bg-slate-100 px-3 py-1 text-sm font-medium text-slate-700 shadow dark:bg-slate-800 dark:text-slate-200">
-                <ShieldCheck size={16} />
-                {user.name} ({user.role})
+              <div className="flex flex-wrap items-center gap-3">
+                <div className="inline-flex items-center gap-2 rounded-full bg-slate-100 px-3 py-1 text-sm font-medium text-slate-700 shadow dark:bg-slate-800 dark:text-slate-200">
+                  <ShieldCheck size={16} />
+                  {user.name} ({user.role})
+                </div>
+                <button
+                  type="button"
+                  onClick={handleLogout}
+                  className="rounded-full border border-slate-300/60 px-3 py-1 text-xs font-semibold text-slate-700 shadow-sm transition hover:border-red-300 hover:text-red-600 dark:border-slate-700 dark:text-slate-200 dark:hover:border-red-600 dark:hover:text-red-300"
+                >
+                  Logout
+                </button>
               </div>
             ) : (
               <div className="text-xs text-slate-500 dark:text-slate-400">
@@ -154,7 +169,7 @@ export default function Home() {
                 loading={questionLoading}
                 evaluation={evaluation}
                 completion={completion}
-                questionCount={questions.length || QUESTION_COUNT}
+                questionCount={questions.length}
               />
             )}
 
@@ -293,13 +308,16 @@ function ExamControlCard({
   completion: number;
   questionCount: number;
 }) {
+  const questionCountLabel =
+    questionCount > 0 ? `${questionCount}` : "All available";
+
   return (
     <div className="rounded-3xl border border-white/40 bg-card/90 p-6 shadow-lg shadow-blue-200/40 backdrop-blur dark:border-slate-800 dark:bg-slate-900/80">
       <div className="flex items-center justify-between gap-3">
         <div>
           <h2 className="text-xl font-semibold">Exam session</h2>
           <p className="text-sm text-slate-600 dark:text-slate-300">
-            {questionCount} randomized questions per run.
+            {questionCountLabel} randomized questions per run.
           </p>
         </div>
         <div className="rounded-full bg-slate-900 px-3 py-1 text-xs font-semibold text-slate-50 dark:bg-slate-700">

@@ -1,0 +1,32 @@
+{
+  "url": "https://www.examtopics.com/discussions/linux-foundation/view/136911-exam-kcna-topic-1-question-34-discussion/",
+  "published_iso": null,
+  "number": 34,
+  "question": "Which of the following would fall under the responsibilities of an SRE?",
+  "options": [
+    {
+      "key": "A",
+      "text": "Developing a new application feature."
+    },
+    {
+      "key": "B",
+      "text": "Creating a monitoring baseline for an application."
+    },
+    {
+      "key": "C",
+      "text": "Submitting a budget for running an application in a cloud."
+    },
+    {
+      "key": "D",
+      "text": "Writing policy on how to submit a code change."
+    }
+  ],
+  "answers": {
+    "platform": [
+      "B"
+    ],
+    "community": [
+      "B"
+    ]
+  }
+}

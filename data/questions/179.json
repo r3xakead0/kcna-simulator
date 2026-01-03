@@ -1,0 +1,32 @@
+{
+  "url": "https://www.examtopics.com/discussions/linux-foundation/view/135377-exam-kcna-topic-1-question-78-discussion/",
+  "published_iso": "2024-03-07T05:56:00",
+  "number": 78,
+  "question": "How does dynamic storage provisioning work?",
+  "options": [
+    {
+      "key": "A",
+      "text": "A user requests dynamically provisioned storage by including an existing storage class in their PersistentVolumeClaim."
+    },
+    {
+      "key": "B",
+      "text": "An administrator creates a storage class and includes it in their pod YAML definition file without creating a PersistentVolumeClaim."
+    },
+    {
+      "key": "C",
+      "text": "A pod requests dynamically provisioned storage by including a storage class and the pod name in their PersistentVolumeClaim."
+    },
+    {
+      "key": "D",
+      "text": "An administrator creates a PersistentVolume and includes the name of the PersistentVolume in their pod YAML definition file."
+    }
+  ],
+  "answers": {
+    "platform": [
+      "A"
+    ],
+    "community": [
+      "A"
+    ]
+  }
+}

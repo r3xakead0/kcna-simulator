@@ -1,0 +1,32 @@
+{
+  "url": "https://www.examtopics.com/discussions/linux-foundation/view/119247-exam-kcna-topic-1-question-26-discussion/",
+  "published_iso": "2023-08-28T15:33:00",
+  "number": 26,
+  "question": "What is the order of 4C’s in Cloud Native Security, starting with the layer that a user has the most control over?",
+  "options": [
+    {
+      "key": "A",
+      "text": "Cloud -> Container -> Cluster -> Code"
+    },
+    {
+      "key": "B",
+      "text": "Container -> Cluster -> Code -> Cloud"
+    },
+    {
+      "key": "C",
+      "text": "Cluster -> Container -> Code -> Cloud"
+    },
+    {
+      "key": "D",
+      "text": "Code -> Container -> Cluster -> Cloud"
+    }
+  ],
+  "answers": {
+    "platform": [
+      "D"
+    ],
+    "community": [
+      "D"
+    ]
+  }
+}

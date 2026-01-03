@@ -1,0 +1,32 @@
+{
+  "url": "https://www.examtopics.com/discussions/linux-foundation/view/306743-exam-kcna-topic-1-question-171-discussion/",
+  "published_iso": "2025-07-18T03:51:00",
+  "number": 171,
+  "question": "Which GitOps engine can be used to orchestrate parallel jobs on Kubernetes?",
+  "options": [
+    {
+      "key": "A",
+      "text": "Jenkins X"
+    },
+    {
+      "key": "B",
+      "text": "Flagger"
+    },
+    {
+      "key": "C",
+      "text": "Flux"
+    },
+    {
+      "key": "D",
+      "text": "Argo Workflows"
+    }
+  ],
+  "answers": {
+    "platform": [
+      "D"
+    ],
+    "community": [
+      "D"
+    ]
+  }
+}

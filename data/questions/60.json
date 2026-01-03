@@ -1,0 +1,32 @@
+{
+  "url": "https://www.examtopics.com/discussions/linux-foundation/view/306738-exam-kcna-topic-1-question-165-discussion/",
+  "published_iso": "2025-07-18T03:51:00",
+  "number": 165,
+  "question": "Which mechanism allows extending the Kubernetes API?",
+  "options": [
+    {
+      "key": "A",
+      "text": "ConfigMap"
+    },
+    {
+      "key": "B",
+      "text": "CustomResourceDefinition"
+    },
+    {
+      "key": "C",
+      "text": "MutatingAdmissionWebhookmechamsm"
+    },
+    {
+      "key": "D",
+      "text": "Kustomize"
+    }
+  ],
+  "answers": {
+    "platform": [
+      "B"
+    ],
+    "community": [
+      "B"
+    ]
+  }
+}

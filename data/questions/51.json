@@ -1,0 +1,32 @@
+{
+  "url": "https://www.examtopics.com/discussions/linux-foundation/view/306752-exam-kcna-topic-1-question-187-discussion/",
+  "published_iso": "2025-07-18T03:52:00",
+  "number": 187,
+  "question": "What is the default eviction timeout when the Ready condition of a node is Unknown or False?",
+  "options": [
+    {
+      "key": "A",
+      "text": "Thirty seconds."
+    },
+    {
+      "key": "B",
+      "text": "Thirty minutes."
+    },
+    {
+      "key": "C",
+      "text": "One minute."
+    },
+    {
+      "key": "D",
+      "text": "Five minutes."
+    }
+  ],
+  "answers": {
+    "platform": [
+      "D"
+    ],
+    "community": [
+      "D"
+    ]
+  }
+}

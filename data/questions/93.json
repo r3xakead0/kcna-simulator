@@ -1,0 +1,32 @@
+{
+  "url": "https://www.examtopics.com/discussions/linux-foundation/view/157351-exam-kcna-topic-1-question-123-discussion/",
+  "published_iso": "2025-03-01T16:35:00",
+  "number": 123,
+  "question": "In the DevOps framework and culture, who builds, automates, and offers continuous delivery tools for developer teams?",
+  "options": [
+    {
+      "key": "A",
+      "text": "Application Users"
+    },
+    {
+      "key": "B",
+      "text": "Application Developers"
+    },
+    {
+      "key": "C",
+      "text": "Platform Engineers"
+    },
+    {
+      "key": "D",
+      "text": "Cluster Operators"
+    }
+  ],
+  "answers": {
+    "platform": [
+      "C"
+    ],
+    "community": [
+      "C"
+    ]
+  }
+}

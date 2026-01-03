@@ -1,0 +1,32 @@
+{
+  "url": "https://www.examtopics.com/discussions/linux-foundation/view/157421-exam-kcna-topic-1-question-133-discussion/",
+  "published_iso": "2025-03-02T17:56:00",
+  "number": 133,
+  "question": "What is the reference implementation of the OCI runtime specification?",
+  "options": [
+    {
+      "key": "A",
+      "text": "lxc"
+    },
+    {
+      "key": "B",
+      "text": "cri-o"
+    },
+    {
+      "key": "C",
+      "text": "runc"
+    },
+    {
+      "key": "D",
+      "text": "docker"
+    }
+  ],
+  "answers": {
+    "platform": [
+      "C"
+    ],
+    "community": [
+      "C"
+    ]
+  }
+}

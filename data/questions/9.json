@@ -1,0 +1,32 @@
+{
+  "url": "https://www.examtopics.com/discussions/linux-foundation/view/306766-exam-kcna-topic-1-question-199-discussion/",
+  "published_iso": "2025-07-18T03:53:00",
+  "number": 199,
+  "question": "In Kubernetes, which abstraction defines a logical set of Pods and a policy by which to access them?",
+  "options": [
+    {
+      "key": "A",
+      "text": "Service Account"
+    },
+    {
+      "key": "B",
+      "text": "NetworkPolicy"
+    },
+    {
+      "key": "C",
+      "text": "Service"
+    },
+    {
+      "key": "D",
+      "text": "Custom Resource Definition"
+    }
+  ],
+  "answers": {
+    "platform": [
+      "C"
+    ],
+    "community": [
+      "C"
+    ]
+  }
+}

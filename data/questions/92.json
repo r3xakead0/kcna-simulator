@@ -1,0 +1,32 @@
+{
+  "url": "https://www.examtopics.com/discussions/linux-foundation/view/157353-exam-kcna-topic-1-question-125-discussion/",
+  "published_iso": "2025-03-01T16:38:00",
+  "number": 125,
+  "question": "The cloud native architecture centered around microservices provides a strong system that ensures ______________.",
+  "options": [
+    {
+      "key": "A",
+      "text": "fallback"
+    },
+    {
+      "key": "B",
+      "text": "resiliency"
+    },
+    {
+      "key": "C",
+      "text": "failover"
+    },
+    {
+      "key": "D",
+      "text": "high reachability"
+    }
+  ],
+  "answers": {
+    "platform": [
+      "B"
+    ],
+    "community": [
+      "B"
+    ]
+  }
+}

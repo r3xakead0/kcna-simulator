@@ -1,0 +1,32 @@
+{
+  "url": "https://www.examtopics.com/discussions/linux-foundation/view/306754-exam-kcna-topic-1-question-180-discussion/",
+  "published_iso": "2025-07-18T03:52:00",
+  "number": 180,
+  "question": "What is an ephemeral container?",
+  "options": [
+    {
+      "key": "A",
+      "text": "A specialized container that runs as root for infosec applications."
+    },
+    {
+      "key": "B",
+      "text": "A specialized container that runs temporarily in an existing Pod."
+    },
+    {
+      "key": "C",
+      "text": "A specialized container that extends and enhances the ‘main’ container in a Pod"
+    },
+    {
+      "key": "D",
+      "text": "A specialized container that run before app container in a Pod"
+    }
+  ],
+  "answers": {
+    "platform": [
+      "B"
+    ],
+    "community": [
+      "B"
+    ]
+  }
+}

@@ -1,0 +1,32 @@
+{
+  "url": "https://www.examtopics.com/discussions/linux-foundation/view/148293-exam-kcna-topic-1-question-58-discussion/",
+  "published_iso": "2024-09-28T13:11:00",
+  "number": 58,
+  "question": "In the Kubernetes platform, which component is responsible for running containers?",
+  "options": [
+    {
+      "key": "A",
+      "text": "etcd"
+    },
+    {
+      "key": "B",
+      "text": "CRI-O"
+    },
+    {
+      "key": "C",
+      "text": "cloud-controller-manager"
+    },
+    {
+      "key": "D",
+      "text": "kube-controller-manager"
+    }
+  ],
+  "answers": {
+    "platform": [
+      "B"
+    ],
+    "community": [
+      "B"
+    ]
+  }
+}

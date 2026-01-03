@@ -1,0 +1,32 @@
+{
+  "url": "https://www.examtopics.com/discussions/linux-foundation/view/150239-exam-kcna-topic-1-question-128-discussion/",
+  "published_iso": "2024-10-25T11:39:00",
+  "number": 128,
+  "question": "Which of the following options is true about considerations for large Kubernetes clusters?",
+  "options": [
+    {
+      "key": "A",
+      "text": "Kubernetes supports up to 1000 nodes and recommends no more than 1000 containers per node."
+    },
+    {
+      "key": "B",
+      "text": "Kubernetes supports up to 5000 nodes and recommends no more than 500 pods per node."
+    },
+    {
+      "key": "C",
+      "text": "Kubernetes supports up to 5000 nodes and recommends no more than 110 pods per node."
+    },
+    {
+      "key": "D",
+      "text": "Kubernetes supports up to 50 nodes and recommends no more than 1000 containers per node."
+    }
+  ],
+  "answers": {
+    "platform": [
+      "C"
+    ],
+    "community": [
+      "C"
+    ]
+  }
+}

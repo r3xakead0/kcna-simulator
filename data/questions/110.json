@@ -1,0 +1,32 @@
+{
+  "url": "https://www.examtopics.com/discussions/linux-foundation/view/150236-exam-kcna-topic-1-question-99-discussion/",
+  "published_iso": "2024-10-25T10:33:00",
+  "number": 99,
+  "question": "How many hosts are required to set up a highly available Kubernetes cluster when using an external etcd topology?",
+  "options": [
+    {
+      "key": "A",
+      "text": "Four hosts. Two for control plane nodes and two for etcd nodes."
+    },
+    {
+      "key": "B",
+      "text": "Four hosts. One for a control plane node and three for etcd nodes."
+    },
+    {
+      "key": "C",
+      "text": "Three hosts. The control plane nodes and etcd nodes share the same host."
+    },
+    {
+      "key": "D",
+      "text": "Six hosts. Three for control plane nodes and three for etcd nodes."
+    }
+  ],
+  "answers": {
+    "platform": [
+      "D"
+    ],
+    "community": [
+      "D"
+    ]
+  }
+}

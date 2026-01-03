@@ -1,0 +1,32 @@
+{
+  "url": "https://www.examtopics.com/discussions/linux-foundation/view/147797-exam-kcna-topic-1-question-45-discussion/",
+  "published_iso": "2024-09-18T08:21:00",
+  "number": 45,
+  "question": "Which command will list the resource types that exist within a cluster?",
+  "options": [
+    {
+      "key": "A",
+      "text": "kubectl api-resources"
+    },
+    {
+      "key": "B",
+      "text": "kubectl get namespaces"
+    },
+    {
+      "key": "C",
+      "text": "kubectl api-versions"
+    },
+    {
+      "key": "D",
+      "text": "curl https://kubectrl/namespaces"
+    }
+  ],
+  "answers": {
+    "platform": [
+      "A"
+    ],
+    "community": [
+      "A"
+    ]
+  }
+}

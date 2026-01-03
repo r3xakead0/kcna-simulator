@@ -1,0 +1,32 @@
+{
+  "url": "https://www.examtopics.com/discussions/linux-foundation/view/152691-exam-kcna-topic-1-question-64-discussion/",
+  "published_iso": "2024-12-08T16:20:00",
+  "number": 64,
+  "question": "Which of the following is a lightweight tool that manages traffic flows between services, enforces access policies, and aggregates telemetry data, all without requiring changes to application code?",
+  "options": [
+    {
+      "key": "A",
+      "text": "NetworkPolicy"
+    },
+    {
+      "key": "B",
+      "text": "Linkerd"
+    },
+    {
+      "key": "C",
+      "text": "kube-proxy"
+    },
+    {
+      "key": "D",
+      "text": "Nginx"
+    }
+  ],
+  "answers": {
+    "platform": [
+      "B"
+    ],
+    "community": [
+      "B"
+    ]
+  }
+}

@@ -1,0 +1,32 @@
+{
+  "url": "https://www.examtopics.com/discussions/linux-foundation/view/312176-exam-kcna-topic-1-question-156-discussion/",
+  "published_iso": "2025-09-09T20:25:00",
+  "number": 156,
+  "question": "Which component of the Kubernetes architecture is responsible for integration with the CRI container runtime?",
+  "options": [
+    {
+      "key": "A",
+      "text": "kubeadm"
+    },
+    {
+      "key": "B",
+      "text": "kubelet"
+    },
+    {
+      "key": "C",
+      "text": "kube-aplserver"
+    },
+    {
+      "key": "D",
+      "text": "kubectl"
+    }
+  ],
+  "answers": {
+    "platform": [
+      "B"
+    ],
+    "community": [
+      "B"
+    ]
+  }
+}

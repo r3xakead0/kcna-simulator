@@ -1,0 +1,32 @@
+{
+  "url": "https://www.examtopics.com/discussions/linux-foundation/view/306736-exam-kcna-topic-1-question-173-discussion/",
+  "published_iso": "2025-07-18T03:51:00",
+  "number": 173,
+  "question": "Which are the core features provided by a service mesh?",
+  "options": [
+    {
+      "key": "A",
+      "text": "Authentication and authorization"
+    },
+    {
+      "key": "B",
+      "text": "Distributing and replicating data"
+    },
+    {
+      "key": "C",
+      "text": "Security vulnerability scanning"
+    },
+    {
+      "key": "D",
+      "text": "Configuration management"
+    }
+  ],
+  "answers": {
+    "platform": [
+      "A"
+    ],
+    "community": [
+      "A"
+    ]
+  }
+}

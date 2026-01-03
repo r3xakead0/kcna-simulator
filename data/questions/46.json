@@ -1,0 +1,32 @@
+{
+  "url": "https://www.examtopics.com/discussions/linux-foundation/view/306761-exam-kcna-topic-1-question-181-discussion/",
+  "published_iso": "2025-07-18T03:53:00",
+  "number": 181,
+  "question": "In a cloud native environment, who is usually responsible for maintaining the workloads running across the different platforms?",
+  "options": [
+    {
+      "key": "A",
+      "text": "The cloud provider."
+    },
+    {
+      "key": "B",
+      "text": "The Site Reliability Engineering (SRE) team."
+    },
+    {
+      "key": "C",
+      "text": "The team of developers."
+    },
+    {
+      "key": "D",
+      "text": "The Support Engineering team (SE)."
+    }
+  ],
+  "answers": {
+    "platform": [
+      "B"
+    ],
+    "community": [
+      "B"
+    ]
+  }
+}

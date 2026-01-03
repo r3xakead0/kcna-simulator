@@ -1,0 +1,32 @@
+{
+  "url": "https://www.examtopics.com/discussions/linux-foundation/view/306770-exam-kcna-topic-1-question-162-discussion/",
+  "published_iso": "2025-07-18T03:54:00",
+  "number": 162,
+  "question": "Which of the following is a challenge derived from running cloud native applications?",
+  "options": [
+    {
+      "key": "A",
+      "text": "The operational costs of maintaining the data center of the company."
+    },
+    {
+      "key": "B",
+      "text": "The cost optimization is complex to maintain across different public cloud environments."
+    },
+    {
+      "key": "C",
+      "text": "The lack of different container images available in public image repositories."
+    },
+    {
+      "key": "D",
+      "text": "The lack of services provided by the most common public clouds"
+    }
+  ],
+  "answers": {
+    "platform": [
+      "B"
+    ],
+    "community": [
+      "B"
+    ]
+  }
+}

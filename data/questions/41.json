@@ -1,0 +1,32 @@
+{
+  "url": "https://www.examtopics.com/discussions/linux-foundation/view/136713-exam-kcna-topic-1-question-76-discussion/",
+  "published_iso": "2024-03-20T10:43:00",
+  "number": 76,
+  "question": "How do you perform a command in a running container of a Pod?",
+  "options": [
+    {
+      "key": "A",
+      "text": "kubectl exec --"
+    },
+    {
+      "key": "B",
+      "text": "docker exec"
+    },
+    {
+      "key": "C",
+      "text": "kubectl run --"
+    },
+    {
+      "key": "D",
+      "text": "kubectl attach -i"
+    }
+  ],
+  "answers": {
+    "platform": [
+      "A"
+    ],
+    "community": [
+      "A"
+    ]
+  }
+}

@@ -1,0 +1,32 @@
+{
+  "url": "https://www.examtopics.com/discussions/linux-foundation/view/157424-exam-kcna-topic-1-question-136-discussion/",
+  "published_iso": "2025-03-02T18:06:00",
+  "number": 136,
+  "question": "At which layer would distributed tracing be implemented in a cloud native deployment?",
+  "options": [
+    {
+      "key": "A",
+      "text": "Network"
+    },
+    {
+      "key": "B",
+      "text": "Application"
+    },
+    {
+      "key": "C",
+      "text": "Database"
+    },
+    {
+      "key": "D",
+      "text": "Infrastructure"
+    }
+  ],
+  "answers": {
+    "platform": [
+      "B"
+    ],
+    "community": [
+      "B"
+    ]
+  }
+}

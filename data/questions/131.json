@@ -1,0 +1,32 @@
+{
+  "url": "https://www.examtopics.com/discussions/linux-foundation/view/154429-exam-kcna-topic-1-question-69-discussion/",
+  "published_iso": "2025-01-12T13:44:00",
+  "number": 69,
+  "question": "Which persona is normally responsible for defining, testing, and running an incident management process?",
+  "options": [
+    {
+      "key": "A",
+      "text": "Site Reliability Engineers"
+    },
+    {
+      "key": "B",
+      "text": "Project Managers"
+    },
+    {
+      "key": "C",
+      "text": "Application Developers"
+    },
+    {
+      "key": "D",
+      "text": "Quality Engineers"
+    }
+  ],
+  "answers": {
+    "platform": [
+      "A"
+    ],
+    "community": [
+      "A"
+    ]
+  }
+}

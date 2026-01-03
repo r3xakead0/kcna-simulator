@@ -1,0 +1,32 @@
+{
+  "url": "https://www.examtopics.com/discussions/linux-foundation/view/157295-exam-kcna-topic-1-question-70-discussion/",
+  "published_iso": "2025-03-01T04:16:00",
+  "number": 70,
+  "question": "What is the default deployment strategy in Kubernetes?",
+  "options": [
+    {
+      "key": "A",
+      "text": "Rolling update"
+    },
+    {
+      "key": "B",
+      "text": "Blue/Green deployment"
+    },
+    {
+      "key": "C",
+      "text": "Canary deployment"
+    },
+    {
+      "key": "D",
+      "text": "Recreate deployment"
+    }
+  ],
+  "answers": {
+    "platform": [
+      "A"
+    ],
+    "community": [
+      "A"
+    ]
+  }
+}

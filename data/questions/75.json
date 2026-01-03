@@ -1,0 +1,32 @@
+{
+  "url": "https://www.examtopics.com/discussions/linux-foundation/view/157520-exam-kcna-topic-1-question-157-discussion/",
+  "published_iso": "2025-03-04T16:52:00",
+  "number": 157,
+  "question": "Which one of the following is an open source runtime security tool?",
+  "options": [
+    {
+      "key": "A",
+      "text": "lxd"
+    },
+    {
+      "key": "B",
+      "text": "containerd"
+    },
+    {
+      "key": "C",
+      "text": "falco"
+    },
+    {
+      "key": "D",
+      "text": "gvisor"
+    }
+  ],
+  "answers": {
+    "platform": [
+      "C"
+    ],
+    "community": [
+      "C"
+    ]
+  }
+}

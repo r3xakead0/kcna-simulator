@@ -1,0 +1,32 @@
+{
+  "url": "https://www.examtopics.com/discussions/linux-foundation/view/136898-exam-kcna-topic-1-question-3-discussion/",
+  "published_iso": "2024-03-22T03:33:00",
+  "number": 3,
+  "question": "A CronJob is scheduled to run by a user every one hour. What happens in the cluster when it's time for this CronJob to run?",
+  "options": [
+    {
+      "key": "A",
+      "text": "Kubelet watches API Server for CronJob objects. When it's time for a Job to run, it runs the Pod directly."
+    },
+    {
+      "key": "B",
+      "text": "Kube-scheduler watches API Server for CronJob objects, and this is why it's called kube-scheduler."
+    },
+    {
+      "key": "C",
+      "text": "CronJob controller component creates a Pod and waits until it finishes to run."
+    },
+    {
+      "key": "D",
+      "text": "CronJob controller component creates a Job. Then the Job controller creates a Pod and waits until it finishes to run."
+    }
+  ],
+  "answers": {
+    "platform": [
+      "D"
+    ],
+    "community": [
+      "D"
+    ]
+  }
+}

@@ -1,0 +1,32 @@
+{
+  "url": "https://www.examtopics.com/discussions/linux-foundation/view/157419-exam-kcna-topic-1-question-131-discussion/",
+  "published_iso": "2025-03-02T17:53:00",
+  "number": 131,
+  "question": "What does \"continuous\" mean in the context of CI/CD?",
+  "options": [
+    {
+      "key": "A",
+      "text": "Frequent releases, Manual processes, Repeatable, Fast processing"
+    },
+    {
+      "key": "B",
+      "text": "Periodic releases, Manual processes, Repeatable, Automated Processing"
+    },
+    {
+      "key": "C",
+      "text": "Frequent releases, Automated processes, Repeatable, Fast processing"
+    },
+    {
+      "key": "D",
+      "text": "Periodic releases, Automated processes, Repeatable, Automated processing"
+    }
+  ],
+  "answers": {
+    "platform": [
+      "C"
+    ],
+    "community": [
+      "C"
+    ]
+  }
+}

@@ -1,0 +1,32 @@
+{
+  "url": "https://www.examtopics.com/discussions/linux-foundation/view/147997-exam-kcna-topic-1-question-111-discussion/",
+  "published_iso": "2024-09-23T14:39:00",
+  "number": 111,
+  "question": "Which of the following is a valid PromQL query?",
+  "options": [
+    {
+      "key": "A",
+      "text": "SELECT * from http_requests_total WHERE job=apiserver"
+    },
+    {
+      "key": "B",
+      "text": "http_requests_total WHERE (job=\"apiserver\")"
+    },
+    {
+      "key": "C",
+      "text": "SELECT * from http_requests_total"
+    },
+    {
+      "key": "D",
+      "text": "http_requests_total(job=\"apiserver\")"
+    }
+  ],
+  "answers": {
+    "platform": [
+      "D"
+    ],
+    "community": [
+      "D"
+    ]
+  }
+}

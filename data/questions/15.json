@@ -1,0 +1,32 @@
+{
+  "url": "https://www.examtopics.com/discussions/linux-foundation/view/306745-exam-kcna-topic-1-question-183-discussion/",
+  "published_iso": "2025-07-18T03:51:00",
+  "number": 183,
+  "question": "What service account does a Pod use in a given namespace when the service account is not specified?",
+  "options": [
+    {
+      "key": "A",
+      "text": "admin"
+    },
+    {
+      "key": "B",
+      "text": "sysadmin"
+    },
+    {
+      "key": "C",
+      "text": "root"
+    },
+    {
+      "key": "D",
+      "text": "default"
+    }
+  ],
+  "answers": {
+    "platform": [
+      "D"
+    ],
+    "community": [
+      "D"
+    ]
+  }
+}

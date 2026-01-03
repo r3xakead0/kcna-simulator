@@ -1,0 +1,32 @@
+{
+  "url": "https://www.examtopics.com/discussions/linux-foundation/view/157340-exam-kcna-topic-1-question-114-discussion/",
+  "published_iso": "2025-03-01T16:18:00",
+  "number": 114,
+  "question": "What is the difference between a Deployment and a ReplicaSet?",
+  "options": [
+    {
+      "key": "A",
+      "text": "With a Deployment, you can’t control the number of pod replicas."
+    },
+    {
+      "key": "B",
+      "text": "A ReplicaSet does not guarantee a stable set of replica pods running."
+    },
+    {
+      "key": "C",
+      "text": "A Deployment is basically the same as a ReplicaSet with annotations."
+    },
+    {
+      "key": "D",
+      "text": "A Deployment is a higher-level concept that manages ReplicaSets."
+    }
+  ],
+  "answers": {
+    "platform": [
+      "D"
+    ],
+    "community": [
+      "D"
+    ]
+  }
+}

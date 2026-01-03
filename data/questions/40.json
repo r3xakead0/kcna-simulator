@@ -1,0 +1,32 @@
+{
+  "url": "https://www.examtopics.com/discussions/linux-foundation/view/119241-exam-kcna-topic-1-question-20-discussion/",
+  "published_iso": "2023-08-28T15:18:00",
+  "number": 20,
+  "question": "Which is the correct kubectl command to display logs in real time?",
+  "options": [
+    {
+      "key": "A",
+      "text": "kubectl logs -p test-container-1"
+    },
+    {
+      "key": "B",
+      "text": "kubectl logs -c test-container-1"
+    },
+    {
+      "key": "C",
+      "text": "kubectl logs -l test-container-1"
+    },
+    {
+      "key": "D",
+      "text": "kubectl logs -f test-container-1"
+    }
+  ],
+  "answers": {
+    "platform": [
+      "D"
+    ],
+    "community": [
+      "D"
+    ]
+  }
+}

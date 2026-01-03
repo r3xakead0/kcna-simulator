@@ -1,0 +1,32 @@
+{
+  "url": "https://www.examtopics.com/discussions/linux-foundation/view/135366-exam-kcna-topic-1-question-38-discussion/",
+  "published_iso": "2024-03-07T03:47:00",
+  "number": 38,
+  "question": "What feature must a CNI support to control specific traffic flows for workloads running in Kubernetes?",
+  "options": [
+    {
+      "key": "A",
+      "text": "Border Gateway Protocol"
+    },
+    {
+      "key": "B",
+      "text": "IP Address Management"
+    },
+    {
+      "key": "C",
+      "text": "Pod Security Policy"
+    },
+    {
+      "key": "D",
+      "text": "Network Policies"
+    }
+  ],
+  "answers": {
+    "platform": [
+      "D"
+    ],
+    "community": [
+      "D"
+    ]
+  }
+}

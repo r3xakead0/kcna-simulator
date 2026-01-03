@@ -1,0 +1,32 @@
+{
+  "url": "https://www.examtopics.com/discussions/linux-foundation/view/147799-exam-kcna-topic-1-question-50-discussion/",
+  "published_iso": "2024-09-18T08:34:00",
+  "number": 50,
+  "question": "What is the goal of load balancing?",
+  "options": [
+    {
+      "key": "A",
+      "text": "Automatically measure request performance across instances of an application."
+    },
+    {
+      "key": "B",
+      "text": "Automatically distribute requests across different versions of an application."
+    },
+    {
+      "key": "C",
+      "text": "Automatically distribute instances of an application across the cluster."
+    },
+    {
+      "key": "D",
+      "text": "Automatically distribute requests across instances of an application."
+    }
+  ],
+  "answers": {
+    "platform": [
+      "D"
+    ],
+    "community": [
+      "D"
+    ]
+  }
+}

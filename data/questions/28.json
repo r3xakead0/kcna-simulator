@@ -1,0 +1,32 @@
+{
+  "url": "https://www.examtopics.com/discussions/linux-foundation/view/157352-exam-kcna-topic-1-question-124-discussion/",
+  "published_iso": "2025-03-01T16:37:00",
+  "number": 124,
+  "question": "Which kubectl command is useful for collecting information about any type of resource that is active in a Kubernetes cluster?",
+  "options": [
+    {
+      "key": "A",
+      "text": "describe"
+    },
+    {
+      "key": "B",
+      "text": "list"
+    },
+    {
+      "key": "C",
+      "text": "expose"
+    },
+    {
+      "key": "D",
+      "text": "explain"
+    }
+  ],
+  "answers": {
+    "platform": [
+      "A"
+    ],
+    "community": [
+      "A"
+    ]
+  }
+}

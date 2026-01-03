@@ -1,0 +1,32 @@
+{
+  "url": "https://www.examtopics.com/discussions/linux-foundation/view/117929-exam-kcna-topic-1-question-51-discussion/",
+  "published_iso": "2023-08-11T21:27:00",
+  "number": 51,
+  "question": "How are ReplicaSets and Deployments related?",
+  "options": [
+    {
+      "key": "A",
+      "text": "Deployments manage ReplicaSets and provide declarative updates to Pods."
+    },
+    {
+      "key": "B",
+      "text": "ReplicaSets manage stateful applications, Deployments manage stateless applications."
+    },
+    {
+      "key": "C",
+      "text": "Deployments are runtime instances of ReplicaSets."
+    },
+    {
+      "key": "D",
+      "text": "ReplicaSets are subsets of Jobs and CronJobs which use imperative Deployments."
+    }
+  ],
+  "answers": {
+    "platform": [
+      "A"
+    ],
+    "community": [
+      "A"
+    ]
+  }
+}

@@ -1,0 +1,32 @@
+{
+  "url": "https://www.examtopics.com/discussions/linux-foundation/view/157346-exam-kcna-topic-1-question-120-discussion/",
+  "published_iso": "2025-03-01T16:28:00",
+  "number": 120,
+  "question": "What is a Pod?",
+  "options": [
+    {
+      "key": "A",
+      "text": "A networked application within Kubernetes."
+    },
+    {
+      "key": "B",
+      "text": "A storage volume within Kubernetes."
+    },
+    {
+      "key": "C",
+      "text": "A single container within Kubernetes."
+    },
+    {
+      "key": "D",
+      "text": "A group of one or more containers within Kubernetes."
+    }
+  ],
+  "answers": {
+    "platform": [
+      "D"
+    ],
+    "community": [
+      "D"
+    ]
+  }
+}

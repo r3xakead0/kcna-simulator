@@ -1,0 +1,32 @@
+{
+  "url": "https://www.examtopics.com/discussions/linux-foundation/view/157326-exam-kcna-topic-1-question-95-discussion/",
+  "published_iso": "2025-03-01T15:23:00",
+  "number": 95,
+  "question": "In CNCF, who develops specifications for industry standards around container formats and runtimes?",
+  "options": [
+    {
+      "key": "A",
+      "text": "Open Container Initiative (OCI)"
+    },
+    {
+      "key": "B",
+      "text": "Linux Foundation Certification Group (LFCG)"
+    },
+    {
+      "key": "C",
+      "text": "Container Network Interface (CNI)"
+    },
+    {
+      "key": "D",
+      "text": "Container Runtime Interface (CRI)"
+    }
+  ],
+  "answers": {
+    "platform": [
+      "A"
+    ],
+    "community": [
+      "A"
+    ]
+  }
+}

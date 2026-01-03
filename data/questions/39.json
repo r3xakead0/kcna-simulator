@@ -1,0 +1,32 @@
+{
+  "url": "https://www.examtopics.com/discussions/linux-foundation/view/119242-exam-kcna-topic-1-question-21-discussion/",
+  "published_iso": "2023-08-28T15:19:00",
+  "number": 21,
+  "question": "How to load and generate data required before the Pod startup?",
+  "options": [
+    {
+      "key": "A",
+      "text": "Use an init container with shared file storage."
+    },
+    {
+      "key": "B",
+      "text": "Use a PVC volume."
+    },
+    {
+      "key": "C",
+      "text": "Use a sidecar container with shared volume."
+    },
+    {
+      "key": "D",
+      "text": "Use another pod with a PVC."
+    }
+  ],
+  "answers": {
+    "platform": [
+      "A"
+    ],
+    "community": [
+      "A"
+    ]
+  }
+}

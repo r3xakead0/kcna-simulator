@@ -1,0 +1,32 @@
+{
+  "url": "https://www.examtopics.com/discussions/linux-foundation/view/157325-exam-kcna-topic-1-question-93-discussion/",
+  "published_iso": "2025-03-01T15:22:00",
+  "number": 93,
+  "question": "What is the purpose of the CRI?",
+  "options": [
+    {
+      "key": "A",
+      "text": "To provide runtime integration control when multiple runtimes are used."
+    },
+    {
+      "key": "B",
+      "text": "Support container replication and scaling on nodes."
+    },
+    {
+      "key": "C",
+      "text": "Provide an interface allowing Kubernetes to support pluggable container runtimes."
+    },
+    {
+      "key": "D",
+      "text": "Allow the definition of dynamic resource criteria across containers."
+    }
+  ],
+  "answers": {
+    "platform": [
+      "C"
+    ],
+    "community": [
+      "C"
+    ]
+  }
+}

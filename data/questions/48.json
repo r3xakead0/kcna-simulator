@@ -1,0 +1,32 @@
+{
+  "url": "https://www.examtopics.com/discussions/linux-foundation/view/306759-exam-kcna-topic-1-question-197-discussion/",
+  "published_iso": "2025-07-18T03:53:00",
+  "number": 197,
+  "question": "What edge and service proxy tool is designed to be integrated with cloud native applications?",
+  "options": [
+    {
+      "key": "A",
+      "text": "CoreDNS"
+    },
+    {
+      "key": "B",
+      "text": "CNI"
+    },
+    {
+      "key": "C",
+      "text": "gRPC"
+    },
+    {
+      "key": "D",
+      "text": "Envoy"
+    }
+  ],
+  "answers": {
+    "platform": [
+      "D"
+    ],
+    "community": [
+      "D"
+    ]
+  }
+}

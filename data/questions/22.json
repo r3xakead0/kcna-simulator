@@ -1,0 +1,32 @@
+{
+  "url": "https://www.examtopics.com/discussions/linux-foundation/view/306767-exam-kcna-topic-1-question-172-discussion/",
+  "published_iso": "2025-07-18T03:53:00",
+  "number": 172,
+  "question": "What is the main purpose of the Open Container Initiative (OCI)?",
+  "options": [
+    {
+      "key": "A",
+      "text": "Accelerating the adoption of containers and Kubernetes in the industry."
+    },
+    {
+      "key": "B",
+      "text": "Creating open industry standards around container formats and runtimes."
+    },
+    {
+      "key": "C",
+      "text": "Creating industry standards around container formats and runtimes for private purposes."
+    },
+    {
+      "key": "D",
+      "text": "Improving the security of standards around container formats and runtimes"
+    }
+  ],
+  "answers": {
+    "platform": [
+      "B"
+    ],
+    "community": [
+      "B"
+    ]
+  }
+}

@@ -1,0 +1,32 @@
+{
+  "url": "https://www.examtopics.com/discussions/linux-foundation/view/129528-exam-kcna-topic-1-question-68-discussion/",
+  "published_iso": "2023-12-28T10:23:00",
+  "number": 68,
+  "question": "Can a Kubernetes Service expose multiple ports?",
+  "options": [
+    {
+      "key": "A",
+      "text": "No, you can only expose one port per each Service."
+    },
+    {
+      "key": "B",
+      "text": "Yes, but you must specify an unambiguous name for each port."
+    },
+    {
+      "key": "C",
+      "text": "Yes, the only requirement is to use different port numbers."
+    },
+    {
+      "key": "D",
+      "text": "No, because the only port you can expose is port number 443."
+    }
+  ],
+  "answers": {
+    "platform": [
+      "B"
+    ],
+    "community": [
+      "B"
+    ]
+  }
+}

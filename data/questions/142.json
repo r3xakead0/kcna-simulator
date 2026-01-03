@@ -1,0 +1,32 @@
+{
+  "url": "https://www.examtopics.com/discussions/linux-foundation/view/135370-exam-kcna-topic-1-question-55-discussion/",
+  "published_iso": null,
+  "number": 55,
+  "question": "What is the name of the Kubernetes resource used to expose an application?",
+  "options": [
+    {
+      "key": "A",
+      "text": "Port"
+    },
+    {
+      "key": "B",
+      "text": "Service"
+    },
+    {
+      "key": "C",
+      "text": "DNS"
+    },
+    {
+      "key": "D",
+      "text": "Deployment"
+    }
+  ],
+  "answers": {
+    "platform": [
+      "B"
+    ],
+    "community": [
+      "B"
+    ]
+  }
+}

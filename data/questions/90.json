@@ -1,0 +1,32 @@
+{
+  "url": "https://www.examtopics.com/discussions/linux-foundation/view/157354-exam-kcna-topic-1-question-127-discussion/",
+  "published_iso": "2025-03-01T16:40:00",
+  "number": 127,
+  "question": "What does \"Continuous Integration\" mean?",
+  "options": [
+    {
+      "key": "A",
+      "text": "The continuous integration and testing of code changes from multiple sources manually."
+    },
+    {
+      "key": "B",
+      "text": "The continuous integration and testing of code changes from multiple sources via automation."
+    },
+    {
+      "key": "C",
+      "text": "The continuous integration of changes from one environment to another."
+    },
+    {
+      "key": "D",
+      "text": "The continuous integration of new tools to support developers in a project."
+    }
+  ],
+  "answers": {
+    "platform": [
+      "B"
+    ],
+    "community": [
+      "B"
+    ]
+  }
+}

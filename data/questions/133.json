@@ -1,0 +1,32 @@
+{
+  "url": "https://www.examtopics.com/discussions/linux-foundation/view/127939-exam-kcna-topic-1-question-65-discussion/",
+  "published_iso": "2023-12-06T19:19:00",
+  "number": 65,
+  "question": "Which Kubernetes resource uses immutable: true boolean field?",
+  "options": [
+    {
+      "key": "A",
+      "text": "Deployment"
+    },
+    {
+      "key": "B",
+      "text": "Pod"
+    },
+    {
+      "key": "C",
+      "text": "ConfigMap"
+    },
+    {
+      "key": "D",
+      "text": "ReplicaSet"
+    }
+  ],
+  "answers": {
+    "platform": [
+      "C"
+    ],
+    "community": [
+      "C"
+    ]
+  }
+}

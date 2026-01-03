@@ -1,0 +1,32 @@
+{
+  "url": "https://www.examtopics.com/discussions/linux-foundation/view/157428-exam-kcna-topic-1-question-139-discussion/",
+  "published_iso": "2025-03-02T18:18:00",
+  "number": 139,
+  "question": "Which of the following sentences is true about container runtimes in Kubernetes?",
+  "options": [
+    {
+      "key": "A",
+      "text": "If you let iptables see bridged traffic, you don't need a container runtime."
+    },
+    {
+      "key": "B",
+      "text": "If you enable IPv4 forwarding, you don't need a container runtime."
+    },
+    {
+      "key": "C",
+      "text": "Container runtimes are deprecated, you must install CRI on each node"
+    },
+    {
+      "key": "D",
+      "text": "You must install a container runtime on each node to run pods on it."
+    }
+  ],
+  "answers": {
+    "platform": [
+      "D"
+    ],
+    "community": [
+      "D"
+    ]
+  }
+}

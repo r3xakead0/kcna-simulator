@@ -1,0 +1,32 @@
+{
+  "url": "https://www.examtopics.com/discussions/linux-foundation/view/139560-exam-kcna-topic-1-question-82-discussion/",
+  "published_iso": "2024-04-25T09:13:00",
+  "number": 82,
+  "question": "Why is Cloud-Native Architecture important?",
+  "options": [
+    {
+      "key": "A",
+      "text": "Cloud Native Architecture revolves around containers, microservices and pipelines."
+    },
+    {
+      "key": "B",
+      "text": "Cloud Native Architecture removes constraints to rapid innovation."
+    },
+    {
+      "key": "C",
+      "text": "Cloud Native Architecture is modern for application deployment and pipelines."
+    },
+    {
+      "key": "D",
+      "text": "Cloud Native Architecture is a bleeding edge technology and service."
+    }
+  ],
+  "answers": {
+    "platform": [
+      "B"
+    ],
+    "community": [
+      "B"
+    ]
+  }
+}

@@ -1,0 +1,32 @@
+{
+  "url": "https://www.examtopics.com/discussions/linux-foundation/view/128782-exam-kcna-topic-1-question-85-discussion/",
+  "published_iso": "2023-12-17T08:53:00",
+  "number": 85,
+  "question": "Which are the two primary modes for Service discovery within a Kubernetes cluster?",
+  "options": [
+    {
+      "key": "A",
+      "text": "Environment variables and DNS"
+    },
+    {
+      "key": "B",
+      "text": "API Calls and LDAP"
+    },
+    {
+      "key": "C",
+      "text": "Labels and Radius"
+    },
+    {
+      "key": "D",
+      "text": "Selectors and DHCP"
+    }
+  ],
+  "answers": {
+    "platform": [
+      "A"
+    ],
+    "community": [
+      "A"
+    ]
+  }
+}

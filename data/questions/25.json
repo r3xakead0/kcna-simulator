@@ -1,0 +1,32 @@
+{
+  "url": "https://www.examtopics.com/discussions/linux-foundation/view/306751-exam-kcna-topic-1-question-168-discussion/",
+  "published_iso": "2025-07-18T03:52:00",
+  "number": 168,
+  "question": "If kubectl is failing to retrieve information from the cluster, where can you find pod logs to troubleshoot?",
+  "options": [
+    {
+      "key": "A",
+      "text": "/var/log/pods/"
+    },
+    {
+      "key": "B",
+      "text": "~/.kube/config"
+    },
+    {
+      "key": "C",
+      "text": "/var/log/k8s/"
+    },
+    {
+      "key": "D",
+      "text": "/etc/kubernetes/"
+    }
+  ],
+  "answers": {
+    "platform": [
+      "A"
+    ],
+    "community": [
+      "A"
+    ]
+  }
+}

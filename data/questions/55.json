@@ -1,0 +1,32 @@
+{
+  "url": "https://www.examtopics.com/discussions/linux-foundation/view/306746-exam-kcna-topic-1-question-164-discussion/",
+  "published_iso": "2025-07-18T03:51:00",
+  "number": 164,
+  "question": "Which statement about Secrets is correct?",
+  "options": [
+    {
+      "key": "A",
+      "text": "A Secret is part of a Pod specification."
+    },
+    {
+      "key": "B",
+      "text": "Secrets data is encrypted with the cluster private key by default."
+    },
+    {
+      "key": "C",
+      "text": "Secrets data is base64 encoded and stored unencrypted by default"
+    },
+    {
+      "key": "D",
+      "text": "A Secret can only be used for confidential data"
+    }
+  ],
+  "answers": {
+    "platform": [
+      "C"
+    ],
+    "community": [
+      "C"
+    ]
+  }
+}

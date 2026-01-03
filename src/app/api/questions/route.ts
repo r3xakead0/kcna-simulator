@@ -4,10 +4,13 @@ import { pickRandomQuestions } from "@/lib/questions";
 
 export async function GET(request: Request) {
   const url = new URL(request.url);
-  const count = Number(url.searchParams.get("count") ?? 5);
-
   const questions = await loadQuestionsFromDisk();
-  const selected = pickRandomQuestions(questions, Math.max(1, count));
+  const countParam = url.searchParams.get("count");
+  const count = countParam ? Number(countParam) : questions.length;
+  const selected = pickRandomQuestions(
+    questions,
+    Math.max(1, Math.min(count, questions.length)),
+  );
 
   return NextResponse.json(selected);
 }

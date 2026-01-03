@@ -1,16 +1,32 @@
 {
-  "url": "https://www.examtopics.com/discussions/linux-foundation/view/117900-exam-kcna-topic-4-question-02-discussion/",
-  "published_iso": "2023-05-22T14:45:00",
-  "number": 4,
-  "question": "Select the observability signals that are commonly collected in cloud native systems.",
+  "url": "https://www.examtopics.com/discussions/linux-foundation/view/129239-exam-kcna-topic-1-question-37-discussion/",
+  "published_iso": "2023-12-22T17:24:00",
+  "number": 37,
+  "question": "Which Kubernetes feature would you use to guard against split brain scenarios with your distributed application?",
   "options": [
-    { "key": "A", "text": "Logs" },
-    { "key": "B", "text": "Metrics" },
-    { "key": "C", "text": "Traces" },
-    { "key": "D", "text": "CSS stylesheets" }
+    {
+      "key": "A",
+      "text": "Replication controllers"
+    },
+    {
+      "key": "B",
+      "text": "Consensus protocols"
+    },
+    {
+      "key": "C",
+      "text": "Rolling updates"
+    },
+    {
+      "key": "D",
+      "text": "StatefulSet"
+    }
   ],
   "answers": {
-    "platform": ["A", "B", "C"],
-    "community": ["A", "B", "C"]
+    "platform": [
+      "D"
+    ],
+    "community": [
+      "D"
+    ]
   }
 }

@@ -1,0 +1,32 @@
+{
+  "url": "https://www.examtopics.com/discussions/linux-foundation/view/122254-exam-kcna-topic-1-question-2-discussion/",
+  "published_iso": "2023-10-03T14:30:00",
+  "number": 2,
+  "question": "Which API object is the recommended way to run a scalable, stateless application on your cluster?",
+  "options": [
+    {
+      "key": "A",
+      "text": "ReplicaSet"
+    },
+    {
+      "key": "B",
+      "text": "Deployment"
+    },
+    {
+      "key": "C",
+      "text": "DaemonSet"
+    },
+    {
+      "key": "D",
+      "text": "Pod"
+    }
+  ],
+  "answers": {
+    "platform": [
+      "B"
+    ],
+    "community": [
+      "B"
+    ]
+  }
+}

@@ -1,0 +1,32 @@
+{
+  "url": "https://www.examtopics.com/discussions/linux-foundation/view/157333-exam-kcna-topic-1-question-107-discussion/",
+  "published_iso": "2025-03-01T15:55:00",
+  "number": 107,
+  "question": "What do Deployments and StatefulSets have in common?",
+  "options": [
+    {
+      "key": "A",
+      "text": "They manage Pods that are based on an identical container spec."
+    },
+    {
+      "key": "B",
+      "text": "They support the OnDelete update strategy."
+    },
+    {
+      "key": "C",
+      "text": "They support an ordered, graceful deployment and scaling."
+    },
+    {
+      "key": "D",
+      "text": "They maintain a sticky identity for each of their Pods."
+    }
+  ],
+  "answers": {
+    "platform": [
+      "A"
+    ],
+    "community": [
+      "A"
+    ]
+  }
+}

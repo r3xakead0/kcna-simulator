@@ -1,0 +1,32 @@
+{
+  "url": "https://www.examtopics.com/discussions/linux-foundation/view/129525-exam-kcna-topic-1-question-97-discussion/",
+  "published_iso": "2023-12-28T07:44:00",
+  "number": 97,
+  "question": "Which of the following will view the snapshot of previously terminated ruby container logs from Pod web-1?",
+  "options": [
+    {
+      "key": "A",
+      "text": "kubectl logs -p -c ruby web-1"
+    },
+    {
+      "key": "B",
+      "text": "kubectl logs -c ruby web-1"
+    },
+    {
+      "key": "C",
+      "text": "kubectl logs -p ruby web-1"
+    },
+    {
+      "key": "D",
+      "text": "kubectl logs -p -c web-1 ruby"
+    }
+  ],
+  "answers": {
+    "platform": [
+      "A"
+    ],
+    "community": [
+      "A"
+    ]
+  }
+}

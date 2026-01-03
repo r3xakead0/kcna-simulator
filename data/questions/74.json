@@ -1,0 +1,32 @@
+{
+  "url": "https://www.examtopics.com/discussions/linux-foundation/view/157521-exam-kcna-topic-1-question-161-discussion/",
+  "published_iso": "2025-03-04T16:53:00",
+  "number": 161,
+  "question": "Which of these is a valid container restart policy?",
+  "options": [
+    {
+      "key": "A",
+      "text": "On login"
+    },
+    {
+      "key": "B",
+      "text": "On update"
+    },
+    {
+      "key": "C",
+      "text": "On start"
+    },
+    {
+      "key": "D",
+      "text": "On failure"
+    }
+  ],
+  "answers": {
+    "platform": [
+      "D"
+    ],
+    "community": [
+      "D"
+    ]
+  }
+}

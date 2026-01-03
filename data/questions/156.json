@@ -1,0 +1,32 @@
+{
+  "url": "https://www.examtopics.com/discussions/linux-foundation/view/128780-exam-kcna-topic-1-question-29-discussion/",
+  "published_iso": "2023-12-17T08:03:00",
+  "number": 29,
+  "question": "Which statement about Ingress is correct?",
+  "options": [
+    {
+      "key": "A",
+      "text": "Ingress provides a simple way to track network endpoints within a cluster."
+    },
+    {
+      "key": "B",
+      "text": "Ingress is a Service type like NodePort and ClusterIP."
+    },
+    {
+      "key": "C",
+      "text": "Ingress is a construct that allows you to specify how a Pod is allowed to communicate."
+    },
+    {
+      "key": "D",
+      "text": "Ingress exposes routes from outside the cluster to services in the cluster."
+    }
+  ],
+  "answers": {
+    "platform": [
+      "D"
+    ],
+    "community": [
+      "D"
+    ]
+  }
+}

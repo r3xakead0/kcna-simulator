@@ -1,0 +1,32 @@
+{
+  "url": "https://www.examtopics.com/discussions/linux-foundation/view/140799-exam-kcna-topic-1-question-44-discussion/",
+  "published_iso": "2024-05-17T16:58:00",
+  "number": 44,
+  "question": "What component enables end users, different parts of the Kubernetes cluster, and external components to communicate with one another?",
+  "options": [
+    {
+      "key": "A",
+      "text": "kubectl"
+    },
+    {
+      "key": "B",
+      "text": "AWS Management Console"
+    },
+    {
+      "key": "C",
+      "text": "Kubernetes API"
+    },
+    {
+      "key": "D",
+      "text": "Google Cloud SDK"
+    }
+  ],
+  "answers": {
+    "platform": [
+      "C"
+    ],
+    "community": [
+      "C"
+    ]
+  }
+}

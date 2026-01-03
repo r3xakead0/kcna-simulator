@@ -1,0 +1,32 @@
+{
+  "url": "https://www.examtopics.com/discussions/linux-foundation/view/119246-exam-kcna-topic-1-question-25-discussion/",
+  "published_iso": "2023-08-28T15:32:00",
+  "number": 25,
+  "question": "The Kubernetes project work is carried primarily by SIGs. What does SIG stand for?",
+  "options": [
+    {
+      "key": "A",
+      "text": "Special Interest Group"
+    },
+    {
+      "key": "B",
+      "text": "Software Installation Guide"
+    },
+    {
+      "key": "C",
+      "text": "Support and Information Group"
+    },
+    {
+      "key": "D",
+      "text": "Strategy Implementation Group"
+    }
+  ],
+  "answers": {
+    "platform": [
+      "A"
+    ],
+    "community": [
+      "A"
+    ]
+  }
+}

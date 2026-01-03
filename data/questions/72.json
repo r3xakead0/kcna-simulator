@@ -1,0 +1,32 @@
+{
+  "url": "https://www.examtopics.com/discussions/linux-foundation/view/119235-exam-kcna-topic-1-question-7-discussion/",
+  "published_iso": "2023-08-28T15:02:00",
+  "number": 7,
+  "question": "What is a Kubernetes service with no cluster IP address called?",
+  "options": [
+    {
+      "key": "A",
+      "text": "Headless Service"
+    },
+    {
+      "key": "B",
+      "text": "Nodeless Service"
+    },
+    {
+      "key": "C",
+      "text": "IPLess Service"
+    },
+    {
+      "key": "D",
+      "text": "Specless Service"
+    }
+  ],
+  "answers": {
+    "platform": [
+      "A"
+    ],
+    "community": [
+      "A"
+    ]
+  }
+}

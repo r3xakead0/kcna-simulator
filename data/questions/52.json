@@ -1,0 +1,32 @@
+{
+  "url": "https://www.examtopics.com/discussions/linux-foundation/view/306750-exam-kcna-topic-1-question-191-discussion/",
+  "published_iso": "2025-07-18T03:52:00",
+  "number": 191,
+  "question": "In Kubernetes, if the API version of feature is v2beta3, it means that:",
+  "options": [
+    {
+      "key": "A",
+      "text": "The version will remain available for all future releases within a Kubernetes major version."
+    },
+    {
+      "key": "B",
+      "text": "The API may change in incompatible ways in a later software release without notice."
+    },
+    {
+      "key": "C",
+      "text": "The software is well tested. Enabling a feature is considered safe."
+    },
+    {
+      "key": "D",
+      "text": "The software may contain bugs. Enabling a feature may expose bugs."
+    }
+  ],
+  "answers": {
+    "platform": [
+      "B"
+    ],
+    "community": [
+      "B"
+    ]
+  }
+}

@@ -1,0 +1,32 @@
+{
+  "url": "https://www.examtopics.com/discussions/linux-foundation/view/152759-exam-kcna-topic-1-question-79-discussion/",
+  "published_iso": "2024-12-09T19:55:00",
+  "number": 79,
+  "question": "Which of the following are tasks performed by a container orchestration tool?",
+  "options": [
+    {
+      "key": "A",
+      "text": "Schedule, scale, and manage the health of containers."
+    },
+    {
+      "key": "B",
+      "text": "Create images, scale, and manage the health of containers."
+    },
+    {
+      "key": "C",
+      "text": "Debug applications, and manage the health of containers."
+    },
+    {
+      "key": "D",
+      "text": "Store images, scale, and manage the health of containers."
+    }
+  ],
+  "answers": {
+    "platform": [
+      "A"
+    ],
+    "community": [
+      "A"
+    ]
+  }
+}

@@ -1,0 +1,32 @@
+{
+  "url": "https://www.examtopics.com/discussions/linux-foundation/view/119231-exam-kcna-topic-1-question-5-discussion/",
+  "published_iso": "2023-08-28T14:52:00",
+  "number": 5,
+  "question": "What is the default value for authorization-mode in Kubernetes API server?",
+  "options": [
+    {
+      "key": "A",
+      "text": "--authorization-mode=RBAC"
+    },
+    {
+      "key": "B",
+      "text": "--authorization-mode=AlwaysAllow"
+    },
+    {
+      "key": "C",
+      "text": "--authorization-mode=AlwaysDeny"
+    },
+    {
+      "key": "D",
+      "text": "--authorization-mode=ABAC"
+    }
+  ],
+  "answers": {
+    "platform": [
+      "B"
+    ],
+    "community": [
+      "B"
+    ]
+  }
+}

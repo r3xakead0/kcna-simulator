@@ -1,0 +1,32 @@
+{
+  "url": "https://www.examtopics.com/discussions/linux-foundation/view/147798-exam-kcna-topic-1-question-48-discussion/",
+  "published_iso": "2024-09-18T08:28:00",
+  "number": 48,
+  "question": "What is a key feature of a container network?",
+  "options": [
+    {
+      "key": "A",
+      "text": "Proxying REST requests across a set of containers."
+    },
+    {
+      "key": "B",
+      "text": "Allowing containers running on separate hosts to communicate."
+    },
+    {
+      "key": "C",
+      "text": "Allowing containers on the same host to communicate."
+    },
+    {
+      "key": "D",
+      "text": "Caching remote disk access."
+    }
+  ],
+  "answers": {
+    "platform": [
+      "B"
+    ],
+    "community": [
+      "B"
+    ]
+  }
+}

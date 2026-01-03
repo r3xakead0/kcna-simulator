@@ -1,0 +1,32 @@
+{
+  "url": "https://www.examtopics.com/discussions/linux-foundation/view/132343-exam-kcna-topic-1-question-35-discussion/",
+  "published_iso": "2024-01-28T17:44:00",
+  "number": 35,
+  "question": "What are the initial namespaces that Kubernetes starts with?",
+  "options": [
+    {
+      "key": "A",
+      "text": "default, kube-system, kube-public, kube-node-lease"
+    },
+    {
+      "key": "B",
+      "text": "default, system, kube-public"
+    },
+    {
+      "key": "C",
+      "text": "kube-default, kube-system, kube-main, kube-node-lease"
+    },
+    {
+      "key": "D",
+      "text": "kube-default, system, kube-main, kube-primary"
+    }
+  ],
+  "answers": {
+    "platform": [
+      "A"
+    ],
+    "community": [
+      "A"
+    ]
+  }
+}

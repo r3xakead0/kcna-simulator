@@ -1,0 +1,32 @@
+{
+  "url": "https://www.examtopics.com/discussions/linux-foundation/view/136912-exam-kcna-topic-1-question-36-discussion/",
+  "published_iso": "2024-03-22T08:03:00",
+  "number": 36,
+  "question": "What is a probe within Kubernetes?",
+  "options": [
+    {
+      "key": "A",
+      "text": "A monitoring mechanism of the Kubernetes API."
+    },
+    {
+      "key": "B",
+      "text": "A pre-operational scope issued by the kubectl agent."
+    },
+    {
+      "key": "C",
+      "text": "A diagnostic performed periodically by the kubelet on a container."
+    },
+    {
+      "key": "D",
+      "text": "A logging mechanism of the Kubernetes API."
+    }
+  ],
+  "answers": {
+    "platform": [
+      "C"
+    ],
+    "community": [
+      "C"
+    ]
+  }
+}

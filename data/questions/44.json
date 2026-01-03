@@ -1,0 +1,32 @@
+{
+  "url": "https://www.examtopics.com/discussions/linux-foundation/view/306764-exam-kcna-topic-1-question-185-discussion/",
+  "published_iso": "2025-07-18T03:53:00",
+  "number": 185,
+  "question": "What's the most adopted way of conflict resolution and decision-making for the open-source projects under the CNCF umbrella?",
+  "options": [
+    {
+      "key": "A",
+      "text": "Financial Analysis"
+    },
+    {
+      "key": "B",
+      "text": "Discussion and Voting"
+    },
+    {
+      "key": "C",
+      "text": "Flipism Technique"
+    },
+    {
+      "key": "D",
+      "text": "Project Founder Say"
+    }
+  ],
+  "answers": {
+    "platform": [
+      "B"
+    ],
+    "community": [
+      "B"
+    ]
+  }
+}

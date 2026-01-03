@@ -1,0 +1,32 @@
+{
+  "url": "https://www.examtopics.com/discussions/linux-foundation/view/154441-exam-kcna-topic-1-question-87-discussion/",
+  "published_iso": "2025-01-12T21:22:00",
+  "number": 87,
+  "question": "What methods can you use to scale a deployment?",
+  "options": [
+    {
+      "key": "A",
+      "text": "With kubectl edit deployment exclusively."
+    },
+    {
+      "key": "B",
+      "text": "With kubectl scale-up deployment exclusively."
+    },
+    {
+      "key": "C",
+      "text": "With kubectl scale deployment and kubectl edit deployment."
+    },
+    {
+      "key": "D",
+      "text": "With kubectl scale deployment exclusively."
+    }
+  ],
+  "answers": {
+    "platform": [
+      "C"
+    ],
+    "community": [
+      "C"
+    ]
+  }
+}

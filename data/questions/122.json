@@ -1,0 +1,32 @@
+{
+  "url": "https://www.examtopics.com/discussions/linux-foundation/view/135367-exam-kcna-topic-1-question-81-discussion/",
+  "published_iso": "2024-03-07T03:52:00",
+  "number": 81,
+  "question": "What is a Kubernetes Service Endpoint?",
+  "options": [
+    {
+      "key": "A",
+      "text": "It is the API Endpoint of our Kubernetes cluster."
+    },
+    {
+      "key": "B",
+      "text": "It is a name of special Pod in kube-system namespace."
+    },
+    {
+      "key": "C",
+      "text": "It is an IP address that we can access from the Internet."
+    },
+    {
+      "key": "D",
+      "text": "It is an object that gets IP addresses of individual Pods assigned to it."
+    }
+  ],
+  "answers": {
+    "platform": [
+      "D"
+    ],
+    "community": [
+      "D"
+    ]
+  }
+}

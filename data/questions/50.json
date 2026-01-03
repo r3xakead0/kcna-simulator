@@ -1,0 +1,32 @@
+{
+  "url": "https://www.examtopics.com/discussions/linux-foundation/view/306753-exam-kcna-topic-1-question-189-discussion/",
+  "published_iso": "2025-07-18T03:52:00",
+  "number": 189,
+  "question": "Why do administrators need a container orchestration tool?",
+  "options": [
+    {
+      "key": "A",
+      "text": "To manage the lifecycle of an elevated number of containers."
+    },
+    {
+      "key": "B",
+      "text": "To assess the security risks of the container images used in production."
+    },
+    {
+      "key": "C",
+      "text": "To learn how to transform monolithic applications into microservices."
+    },
+    {
+      "key": "D",
+      "text": "Container orchestration tools such as Kubernetes are the future."
+    }
+  ],
+  "answers": {
+    "platform": [
+      "A"
+    ],
+    "community": [
+      "A"
+    ]
+  }
+}

@@ -1,0 +1,32 @@
+{
+  "url": "https://www.examtopics.com/discussions/linux-foundation/view/152761-exam-kcna-topic-1-question-89-discussion/",
+  "published_iso": "2024-12-09T20:08:00",
+  "number": 89,
+  "question": "Which is an industry-standard container runtime with an “emphasis” on simplicity, robustness, and portability?",
+  "options": [
+    {
+      "key": "A",
+      "text": "cri-o"
+    },
+    {
+      "key": "B",
+      "text": "lxd"
+    },
+    {
+      "key": "C",
+      "text": "containerd"
+    },
+    {
+      "key": "D",
+      "text": "kata-runtime"
+    }
+  ],
+  "answers": {
+    "platform": [
+      "C"
+    ],
+    "community": [
+      "C"
+    ]
+  }
+}

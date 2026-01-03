@@ -1,0 +1,32 @@
+{
+  "url": "https://www.examtopics.com/discussions/linux-foundation/view/141758-exam-kcna-topic-1-question-72-discussion/",
+  "published_iso": "2024-06-02T18:37:00",
+  "number": 72,
+  "question": "Which of the following is a responsibility of the governance board of an open source project?",
+  "options": [
+    {
+      "key": "A",
+      "text": "Decide about the marketing strategy of the project."
+    },
+    {
+      "key": "B",
+      "text": "Review the pull requests in the main branch."
+    },
+    {
+      "key": "C",
+      "text": "Outline the project's “terms of engagement”."
+    },
+    {
+      "key": "D",
+      "text": "Define the license to be used in the project."
+    }
+  ],
+  "answers": {
+    "platform": [
+      "C"
+    ],
+    "community": [
+      "C"
+    ]
+  }
+}

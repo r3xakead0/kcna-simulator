@@ -1,0 +1,32 @@
+{
+  "url": "https://www.examtopics.com/discussions/linux-foundation/view/157339-exam-kcna-topic-1-question-112-discussion/",
+  "published_iso": "2025-03-01T16:15:00",
+  "number": 112,
+  "question": "Which of the following best describes horizontally scaling an application deployment?",
+  "options": [
+    {
+      "key": "A",
+      "text": "The act of adding/removing node instances to the cluster to meet demand."
+    },
+    {
+      "key": "B",
+      "text": "The act of adding/removing applications to meet demand."
+    },
+    {
+      "key": "C",
+      "text": "The act of adding/removing application instances of the same application to meet demand."
+    },
+    {
+      "key": "D",
+      "text": "The act of adding/removing resources to application instances to meet demand."
+    }
+  ],
+  "answers": {
+    "platform": [
+      "C"
+    ],
+    "community": [
+      "C"
+    ]
+  }
+}

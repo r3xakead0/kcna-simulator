@@ -1,0 +1,32 @@
+{
+  "url": "https://www.examtopics.com/discussions/linux-foundation/view/122258-exam-kcna-topic-1-question-8-discussion/",
+  "published_iso": "2023-10-03T14:41:00",
+  "number": 8,
+  "question": "CI/CD stands for:",
+  "options": [
+    {
+      "key": "A",
+      "text": "Continuous Information / Continuous Development"
+    },
+    {
+      "key": "B",
+      "text": "Continuous Integration / Continuous Development"
+    },
+    {
+      "key": "C",
+      "text": "Cloud Integration / Cloud Development"
+    },
+    {
+      "key": "D",
+      "text": "Continuous Integration / Continuous Deployment"
+    }
+  ],
+  "answers": {
+    "platform": [
+      "D"
+    ],
+    "community": [
+      "D"
+    ]
+  }
+}

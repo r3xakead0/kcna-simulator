@@ -1,16 +1,32 @@
 {
-  "url": "https://www.examtopics.com/discussions/linux-foundation/view/118000-exam-kcna-topic-3-question-11-discussion/",
-  "published_iso": "2023-06-14T09:30:00",
-  "number": 3,
-  "question": "What is a primary benefit of using container images in cloud native architectures?",
+  "url": "https://www.examtopics.com/discussions/linux-foundation/view/117703-exam-kcna-topic-1-question-9-discussion/",
+  "published_iso": "2023-08-10T01:34:00",
+  "number": 9,
+  "question": "What default level of protection is applied to the data in Secrets in the Kubernetes API?",
   "options": [
-    { "key": "A", "text": "Images eliminate the need for registries" },
-    { "key": "B", "text": "Images guarantee infinite storage capacity" },
-    { "key": "C", "text": "Images provide portability and immutability" },
-    { "key": "D", "text": "Images enforce a single programming language" }
+    {
+      "key": "A",
+      "text": "The values use AES Symmetric Encryption"
+    },
+    {
+      "key": "B",
+      "text": "The values are stored in plain text"
+    },
+    {
+      "key": "C",
+      "text": "The values are encoded with SHA256 hashes"
+    },
+    {
+      "key": "D",
+      "text": "The values are base64 encoded"
+    }
   ],
   "answers": {
-    "platform": ["C"],
-    "community": ["C"]
+    "platform": [
+      "D"
+    ],
+    "community": [
+      "D"
+    ]
   }
 }

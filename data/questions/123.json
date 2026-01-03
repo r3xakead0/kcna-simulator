@@ -1,0 +1,32 @@
+{
+  "url": "https://www.examtopics.com/discussions/linux-foundation/view/127942-exam-kcna-topic-1-question-74-discussion/",
+  "published_iso": "2023-12-06T19:41:00",
+  "number": 74,
+  "question": "What are the most important resources to guarantee the performance of an etcd cluster?",
+  "options": [
+    {
+      "key": "A",
+      "text": "CPU and disk capacity."
+    },
+    {
+      "key": "B",
+      "text": "Network throughput and disk I/O."
+    },
+    {
+      "key": "C",
+      "text": "CPU and RAM memory."
+    },
+    {
+      "key": "D",
+      "text": "Network throughput and CPU."
+    }
+  ],
+  "answers": {
+    "platform": [
+      "B"
+    ],
+    "community": [
+      "B"
+    ]
+  }
+}

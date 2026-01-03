@@ -1,0 +1,32 @@
+{
+  "url": "https://www.examtopics.com/discussions/linux-foundation/view/312175-exam-kcna-topic-1-question-152-discussion/",
+  "published_iso": "2025-09-09T20:07:00",
+  "number": 152,
+  "question": "Kubernetes___ protect you against voluntary interruptions (such as deleting Pods, draining nodes) to run applications in a highly available manner.",
+  "options": [
+    {
+      "key": "A",
+      "text": "Pod Topology Spread Constraints"
+    },
+    {
+      "key": "B",
+      "text": "Pod Disruption Budgets"
+    },
+    {
+      "key": "C",
+      "text": "Taints and Tolerances"
+    },
+    {
+      "key": "D",
+      "text": "Resource Limits and Requests"
+    }
+  ],
+  "answers": {
+    "platform": [
+      "B"
+    ],
+    "community": [
+      "B"
+    ]
+  }
+}

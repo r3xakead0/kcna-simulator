@@ -1,0 +1,32 @@
+{
+  "url": "https://www.examtopics.com/discussions/linux-foundation/view/306739-exam-kcna-topic-1-question-178-discussion/",
+  "published_iso": "2025-07-18T03:51:00",
+  "number": 178,
+  "question": "What is the main purpose of the Ingress in Kubernetes?",
+  "options": [
+    {
+      "key": "A",
+      "text": "Access HTTP and HTTPS services running in the cluster based on their IP address."
+    },
+    {
+      "key": "B",
+      "text": "Access services different from HTTP or HTTPS running in the cluster based on their IP address."
+    },
+    {
+      "key": "C",
+      "text": "Access services different from HTTP or HTTPS running in the cluster based on their path"
+    },
+    {
+      "key": "D",
+      "text": "Access HTTP and HTTPS services running in the cluster based on their path."
+    }
+  ],
+  "answers": {
+    "platform": [
+      "D"
+    ],
+    "community": [
+      "D"
+    ]
+  }
+}

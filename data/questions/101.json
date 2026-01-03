@@ -1,0 +1,32 @@
+{
+  "url": "https://www.examtopics.com/discussions/linux-foundation/view/157337-exam-kcna-topic-1-question-109-discussion/",
+  "published_iso": "2025-03-01T15:59:00",
+  "number": 109,
+  "question": "What is a best practice to minimize the container image size?",
+  "options": [
+    {
+      "key": "A",
+      "text": "Use a DockerFile."
+    },
+    {
+      "key": "B",
+      "text": "Use multistage builds."
+    },
+    {
+      "key": "C",
+      "text": "Build images with different tags."
+    },
+    {
+      "key": "D",
+      "text": "Add a build.sh script."
+    }
+  ],
+  "answers": {
+    "platform": [
+      "B"
+    ],
+    "community": [
+      "B"
+    ]
+  }
+}

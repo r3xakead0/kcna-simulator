@@ -1,0 +1,32 @@
+{
+  "url": "https://www.examtopics.com/discussions/linux-foundation/view/135371-exam-kcna-topic-1-question-59-discussion/",
+  "published_iso": "2024-03-07T05:11:00",
+  "number": 59,
+  "question": "Services and Pods in Kubernetes are ______ objects.",
+  "options": [
+    {
+      "key": "A",
+      "text": "JSON"
+    },
+    {
+      "key": "B",
+      "text": "YAML"
+    },
+    {
+      "key": "C",
+      "text": "Java"
+    },
+    {
+      "key": "D",
+      "text": "REST"
+    }
+  ],
+  "answers": {
+    "platform": [
+      "D"
+    ],
+    "community": [
+      "D"
+    ]
+  }
+}

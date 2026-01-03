@@ -1,0 +1,32 @@
+{
+  "url": "https://www.examtopics.com/discussions/linux-foundation/view/306744-exam-kcna-topic-1-question-198-discussion/",
+  "published_iso": "2025-07-18T03:51:00",
+  "number": 198,
+  "question": "What is Flux constructed with?",
+  "options": [
+    {
+      "key": "A",
+      "text": "GitLab Environment Toolkit"
+    },
+    {
+      "key": "B",
+      "text": "GitOps Toolkit"
+    },
+    {
+      "key": "C",
+      "text": "Helm Toolkit"
+    },
+    {
+      "key": "D",
+      "text": "GitHub Actions Toolkit"
+    }
+  ],
+  "answers": {
+    "platform": [
+      "B"
+    ],
+    "community": [
+      "B"
+    ]
+  }
+}

@@ -1,0 +1,32 @@
+{
+  "url": "https://www.examtopics.com/discussions/linux-foundation/view/157420-exam-kcna-topic-1-question-132-discussion/",
+  "published_iso": "2025-03-02T17:56:00",
+  "number": 132,
+  "question": "What is ephemeral storage?",
+  "options": [
+    {
+      "key": "A",
+      "text": "Storage space that need not persist across restarts."
+    },
+    {
+      "key": "B",
+      "text": "Storage that may grow dynamically."
+    },
+    {
+      "key": "C",
+      "text": "Storage used by multiple consumers (e.g. multiple Pods)."
+    },
+    {
+      "key": "D",
+      "text": "Storage that is always provisioned locally"
+    }
+  ],
+  "answers": {
+    "platform": [
+      "A"
+    ],
+    "community": [
+      "A"
+    ]
+  }
+}

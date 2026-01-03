@@ -1,0 +1,32 @@
+{
+  "url": "https://www.examtopics.com/discussions/linux-foundation/view/306763-exam-kcna-topic-1-question-176-discussion/",
+  "published_iso": "2025-07-18T03:53:00",
+  "number": 176,
+  "question": "What happens with a regular pod running in Kubernetes when a node fails?",
+  "options": [
+    {
+      "key": "A",
+      "text": "A new pod with the same UID is scheduled to another node after a while."
+    },
+    {
+      "key": "B",
+      "text": "A new, near-identical pod but with different UID is scheduled to another node."
+    },
+    {
+      "key": "C",
+      "text": "By default, a pod can only be scheduled to the same node when the node fails."
+    },
+    {
+      "key": "D",
+      "text": "A new pod is scheduled on a different node only if it is configured explicitly."
+    }
+  ],
+  "answers": {
+    "platform": [
+      "B"
+    ],
+    "community": [
+      "B"
+    ]
+  }
+}

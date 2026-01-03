@@ -1,0 +1,32 @@
+{
+  "url": "https://www.examtopics.com/discussions/linux-foundation/view/148292-exam-kcna-topic-1-question-57-discussion/",
+  "published_iso": "2024-09-28T13:04:00",
+  "number": 57,
+  "question": "What is the telemetry component that represents a series of related distributed events that encode the end-to-end request flow through a distributed system?",
+  "options": [
+    {
+      "key": "A",
+      "text": "Metrics"
+    },
+    {
+      "key": "B",
+      "text": "Logs"
+    },
+    {
+      "key": "C",
+      "text": "Spans"
+    },
+    {
+      "key": "D",
+      "text": "Traces"
+    }
+  ],
+  "answers": {
+    "platform": [
+      "D"
+    ],
+    "community": [
+      "D"
+    ]
+  }
+}

@@ -1,0 +1,32 @@
+{
+  "url": "https://www.examtopics.com/discussions/linux-foundation/view/135364-exam-kcna-topic-1-question-27-discussion/",
+  "published_iso": "2024-03-07T03:12:00",
+  "number": 27,
+  "question": "Which group of container runtimes provides additional sandboxed isolation and elevated security?",
+  "options": [
+    {
+      "key": "A",
+      "text": "rune, cgroups"
+    },
+    {
+      "key": "B",
+      "text": "docker, containerd"
+    },
+    {
+      "key": "C",
+      "text": "runsc, kata"
+    },
+    {
+      "key": "D",
+      "text": "crun, cri-o"
+    }
+  ],
+  "answers": {
+    "platform": [
+      "C"
+    ],
+    "community": [
+      "C"
+    ]
+  }
+}

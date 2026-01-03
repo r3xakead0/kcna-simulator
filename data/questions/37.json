@@ -1,0 +1,32 @@
+{
+  "url": "https://www.examtopics.com/discussions/linux-foundation/view/136909-exam-kcna-topic-1-question-33-discussion/",
+  "published_iso": "2024-03-22T07:58:00",
+  "number": 33,
+  "question": "What fields must exist in any Kubernetes object (e.g. YAML) file?",
+  "options": [
+    {
+      "key": "A",
+      "text": "apiVersion, kind, metadata"
+    },
+    {
+      "key": "B",
+      "text": "kind, namespace, data"
+    },
+    {
+      "key": "C",
+      "text": "apiVersion, metadata, namespace"
+    },
+    {
+      "key": "D",
+      "text": "kind, metadata, data"
+    }
+  ],
+  "answers": {
+    "platform": [
+      "A"
+    ],
+    "community": [
+      "A"
+    ]
+  }
+}

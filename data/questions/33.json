@@ -1,0 +1,32 @@
+{
+  "url": "https://www.examtopics.com/discussions/linux-foundation/view/157347-exam-kcna-topic-1-question-119-discussion/",
+  "published_iso": "2025-03-01T16:29:00",
+  "number": 119,
+  "question": "How does Horizontal Pod autoscaling work in Kubernetes?",
+  "options": [
+    {
+      "key": "A",
+      "text": "The Horizontal Pod Autoscaler controller adds more CPU or memory to the pods when the load is above the configured threshold, and reduces CPU or memory when the load is below."
+    },
+    {
+      "key": "B",
+      "text": "The Horizontal Pod Autoscaler controller adds more pods when the load is above the configured threshold, but does not reduce the number of pods when the load is below."
+    },
+    {
+      "key": "C",
+      "text": "The Horizontal Pod Autoscaler controller adds more pods to the specified DaemonSet when the load is above the configured threshold, and reduces the number of pods when the load is below."
+    },
+    {
+      "key": "D",
+      "text": "The Horizontal Pod Autoscaler controller adds more pods when the load is above the configured threshold, and reduces the number of pods when the load is below."
+    }
+  ],
+  "answers": {
+    "platform": [
+      "D"
+    ],
+    "community": [
+      "D"
+    ]
+  }
+}

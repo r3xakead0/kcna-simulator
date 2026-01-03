@@ -1,0 +1,32 @@
+{
+  "url": "https://www.examtopics.com/discussions/linux-foundation/view/157331-exam-kcna-topic-1-question-105-discussion/",
+  "published_iso": "2025-03-01T15:40:00",
+  "number": 105,
+  "question": "What is a Dockerfile?",
+  "options": [
+    {
+      "key": "A",
+      "text": "A bash script that is used to automatically build a docker image."
+    },
+    {
+      "key": "B",
+      "text": "A config file that defines which image registry a container should be pushed to."
+    },
+    {
+      "key": "C",
+      "text": "A text file that contains all the commands a user could call on the command line to assemble an image."
+    },
+    {
+      "key": "D",
+      "text": "An image layer created by a running container stored on the host."
+    }
+  ],
+  "answers": {
+    "platform": [
+      "C"
+    ],
+    "community": [
+      "C"
+    ]
+  }
+}

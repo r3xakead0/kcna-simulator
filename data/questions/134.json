@@ -1,0 +1,32 @@
+{
+  "url": "https://www.examtopics.com/discussions/linux-foundation/view/139400-exam-kcna-topic-1-question-63-discussion/",
+  "published_iso": "2024-04-23T09:30:00",
+  "number": 63,
+  "question": "Which of these commands is used to retrieve the documentation and field definitions for a Kubernetes resource?",
+  "options": [
+    {
+      "key": "A",
+      "text": "kubectl explain"
+    },
+    {
+      "key": "B",
+      "text": "kubectl api-resources"
+    },
+    {
+      "key": "C",
+      "text": "kubectl get --help"
+    },
+    {
+      "key": "D",
+      "text": "kubectl show"
+    }
+  ],
+  "answers": {
+    "platform": [
+      "A"
+    ],
+    "community": [
+      "A"
+    ]
+  }
+}

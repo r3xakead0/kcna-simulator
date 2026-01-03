@@ -1,0 +1,32 @@
+{
+  "url": "https://www.examtopics.com/discussions/linux-foundation/view/157355-exam-kcna-topic-1-question-130-discussion/",
+  "published_iso": "2025-03-01T16:42:00",
+  "number": 130,
+  "question": "The IPv4/IPv6 dual stack in Kubernetes:",
+  "options": [
+    {
+      "key": "A",
+      "text": "Translates an IPv4 request from a service to an IPv6 service."
+    },
+    {
+      "key": "B",
+      "text": "Allows you to access the IPv4 address by using the IPv6 address."
+    },
+    {
+      "key": "C",
+      "text": "Requires NetworkPolicies to prevent services from mixing requests."
+    },
+    {
+      "key": "D",
+      "text": "Allows you to create IPv4 and IPv6 dual stack services."
+    }
+  ],
+  "answers": {
+    "platform": [
+      "D"
+    ],
+    "community": [
+      "D"
+    ]
+  }
+}

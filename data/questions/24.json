@@ -1,0 +1,32 @@
+{
+  "url": "https://www.examtopics.com/discussions/linux-foundation/view/306757-exam-kcna-topic-1-question-169-discussion/",
+  "published_iso": "2025-07-18T03:52:00",
+  "number": 169,
+  "question": "Which component in Kubernetes is responsible to watch newly created Pods with no assigned node, and selects a node for them to run on?",
+  "options": [
+    {
+      "key": "A",
+      "text": "etcd"
+    },
+    {
+      "key": "B",
+      "text": "kube controller-manager"
+    },
+    {
+      "key": "C",
+      "text": "kube proxy"
+    },
+    {
+      "key": "D",
+      "text": "kube scheduler"
+    }
+  ],
+  "answers": {
+    "platform": [
+      "D"
+    ],
+    "community": [
+      "D"
+    ]
+  }
+}

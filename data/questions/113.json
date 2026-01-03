@@ -1,0 +1,32 @@
+{
+  "url": "https://www.examtopics.com/discussions/linux-foundation/view/128036-exam-kcna-topic-1-question-96-discussion/",
+  "published_iso": "2023-12-07T18:06:00",
+  "number": 96,
+  "question": "Which of the following options includes valid API versions?",
+  "options": [
+    {
+      "key": "A",
+      "text": "alpha1v1, beta3v3, v2"
+    },
+    {
+      "key": "B",
+      "text": "alpha1, beta3, v2"
+    },
+    {
+      "key": "C",
+      "text": "v1alpha1, v2beta3, v2"
+    },
+    {
+      "key": "D",
+      "text": "v1alpha1, v2beta3, 2.0"
+    }
+  ],
+  "answers": {
+    "platform": [
+      "C"
+    ],
+    "community": [
+      "C"
+    ]
+  }
+}

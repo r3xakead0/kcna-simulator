@@ -1,16 +1,32 @@
 {
-  "url": "https://www.examtopics.com/discussions/linux-foundation/view/121111-exam-kcna-topic-2-question-03-discussion/",
-  "published_iso": "2024-01-09T10:00:00",
-  "number": 2,
-  "question": "Which CNCF project is primarily focused on container orchestration?",
+  "url": "https://www.examtopics.com/discussions/linux-foundation/view/118203-exam-kcna-topic-1-question-10-discussion/",
+  "published_iso": "2023-08-15T23:19:00",
+  "number": 10,
+  "question": "What function does kube-proxy provide to a cluster?",
   "options": [
-    { "key": "A", "text": "Envoy" },
-    { "key": "B", "text": "Kubernetes" },
-    { "key": "C", "text": "Prometheus" },
-    { "key": "D", "text": "Fluentd" }
+    {
+      "key": "A",
+      "text": "Implementing the Ingress resource type for application traffic."
+    },
+    {
+      "key": "B",
+      "text": "Forwarding data to the correct endpoints for Services."
+    },
+    {
+      "key": "C",
+      "text": "Managing data egress from the cluster nodes to the network."
+    },
+    {
+      "key": "D",
+      "text": "Managing access to the Kubernetes API."
+    }
   ],
   "answers": {
-    "platform": ["B"],
-    "community": ["B"]
+    "platform": [
+      "B"
+    ],
+    "community": [
+      "B"
+    ]
   }
 }

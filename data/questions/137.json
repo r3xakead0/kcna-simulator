@@ -1,0 +1,32 @@
+{
+  "url": "https://www.examtopics.com/discussions/linux-foundation/view/135372-exam-kcna-topic-1-question-60-discussion/",
+  "published_iso": "2024-03-07T05:13:00",
+  "number": 60,
+  "question": "What Kubernetes component handles network communications inside and outside of a cluster, using operating system packet filtering if available?",
+  "options": [
+    {
+      "key": "A",
+      "text": "kube-proxy"
+    },
+    {
+      "key": "B",
+      "text": "kubelet"
+    },
+    {
+      "key": "C",
+      "text": "etcd"
+    },
+    {
+      "key": "D",
+      "text": "kube-controller-manager"
+    }
+  ],
+  "answers": {
+    "platform": [
+      "A"
+    ],
+    "community": [
+      "A"
+    ]
+  }
+}

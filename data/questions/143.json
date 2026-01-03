@@ -1,0 +1,32 @@
+{
+  "url": "https://www.examtopics.com/discussions/linux-foundation/view/139361-exam-kcna-topic-1-question-53-discussion/",
+  "published_iso": "2024-04-22T13:57:00",
+  "number": 53,
+  "question": "What is the core metric type in Prometheus used to represent a single numerical value that can go up and down?",
+  "options": [
+    {
+      "key": "A",
+      "text": "Summary"
+    },
+    {
+      "key": "B",
+      "text": "Counter"
+    },
+    {
+      "key": "C",
+      "text": "Histogram"
+    },
+    {
+      "key": "D",
+      "text": "Gauge"
+    }
+  ],
+  "answers": {
+    "platform": [
+      "D"
+    ],
+    "community": [
+      "D"
+    ]
+  }
+}

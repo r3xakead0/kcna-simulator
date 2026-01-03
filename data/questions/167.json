@@ -1,0 +1,32 @@
+{
+  "url": "https://www.examtopics.com/discussions/linux-foundation/view/122259-exam-kcna-topic-1-question-16-discussion/",
+  "published_iso": "2023-10-03T14:47:00",
+  "number": 16,
+  "question": "In which framework do the developers no longer have to deal with capacity, deployments, scaling and fault tolerance, and OS?",
+  "options": [
+    {
+      "key": "A",
+      "text": "Docker Swam"
+    },
+    {
+      "key": "B",
+      "text": "Kubernetes"
+    },
+    {
+      "key": "C",
+      "text": "Mesos"
+    },
+    {
+      "key": "D",
+      "text": "Serverless"
+    }
+  ],
+  "answers": {
+    "platform": [
+      "D"
+    ],
+    "community": [
+      "D"
+    ]
+  }
+}

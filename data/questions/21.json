@@ -1,0 +1,32 @@
+{
+  "url": "https://www.examtopics.com/discussions/linux-foundation/view/306755-exam-kcna-topic-1-question-174-discussion/",
+  "published_iso": "2025-07-18T03:52:00",
+  "number": 174,
+  "question": "Which of the following options include only mandatory fields to create a Kubernetes object using a YAML file?",
+  "options": [
+    {
+      "key": "A",
+      "text": "apiVersion, template, kind, status"
+    },
+    {
+      "key": "B",
+      "text": "apiVersion, metadata, status, spec"
+    },
+    {
+      "key": "C",
+      "text": "apiVersion, template, kind, spec"
+    },
+    {
+      "key": "D",
+      "text": "apiVersion, metadata, kind, spec"
+    }
+  ],
+  "answers": {
+    "platform": [
+      "D"
+    ],
+    "community": [
+      "D"
+    ]
+  }
+}

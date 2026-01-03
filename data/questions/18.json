@@ -1,0 +1,32 @@
+{
+  "url": "https://www.examtopics.com/discussions/linux-foundation/view/306765-exam-kcna-topic-1-question-179-discussion/",
+  "published_iso": "2025-07-18T03:53:00",
+  "number": 179,
+  "question": "How can you extend the Kubernetes API?",
+  "options": [
+    {
+      "key": "A",
+      "text": "Adding a CustomResourceDefinition or implementing an aggregation layer."
+    },
+    {
+      "key": "B",
+      "text": "Adding a new version of a resource, for instance v4beta3."
+    },
+    {
+      "key": "C",
+      "text": "With the command kubectl extend api, logged in as an administrator."
+    },
+    {
+      "key": "D",
+      "text": "Adding the desired API object as a kubelet parameter"
+    }
+  ],
+  "answers": {
+    "platform": [
+      "A"
+    ],
+    "community": [
+      "A"
+    ]
+  }
+}

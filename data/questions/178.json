@@ -1,0 +1,32 @@
+{
+  "url": "https://www.examtopics.com/discussions/linux-foundation/view/122256-exam-kcna-topic-1-question-4-discussion/",
+  "published_iso": "2023-10-03T14:36:00",
+  "number": 4,
+  "question": "What is the purpose of the kubelet component within a Kubernetes cluster?",
+  "options": [
+    {
+      "key": "A",
+      "text": "A dashboard for Kubernetes Clusters that allows management and troubleshooting of applications."
+    },
+    {
+      "key": "B",
+      "text": "A network proxy that runs on each node in your cluster, implementing part of the Kubernetes Service concept."
+    },
+    {
+      "key": "C",
+      "text": "A component that watches for newly created Pods with no assigned node, and selects a node for them to run on."
+    },
+    {
+      "key": "D",
+      "text": "An agent that runs on each node in the cluster. It makes sure that containers are running in a Pod."
+    }
+  ],
+  "answers": {
+    "platform": [
+      "D"
+    ],
+    "community": [
+      "D"
+    ]
+  }
+}

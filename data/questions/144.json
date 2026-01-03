@@ -1,0 +1,32 @@
+{
+  "url": "https://www.examtopics.com/discussions/linux-foundation/view/154426-exam-kcna-topic-1-question-52-discussion/",
+  "published_iso": "2025-01-12T12:57:00",
+  "number": 52,
+  "question": "What factors influence the Kubernetes scheduler when it places Pods on nodes?",
+  "options": [
+    {
+      "key": "A",
+      "text": "Pod memory requests, node taints, and Pod affinity."
+    },
+    {
+      "key": "B",
+      "text": "Pod labels, node labels, and request labels."
+    },
+    {
+      "key": "C",
+      "text": "Node taints, node level, and Pod priority."
+    },
+    {
+      "key": "D",
+      "text": "Pod priority, container command, and node labels."
+    }
+  ],
+  "answers": {
+    "platform": [
+      "A"
+    ],
+    "community": [
+      "A"
+    ]
+  }
+}

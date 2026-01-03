@@ -1,0 +1,32 @@
+{
+  "url": "https://www.examtopics.com/discussions/linux-foundation/view/306740-exam-kcna-topic-1-question-188-discussion/",
+  "published_iso": "2025-07-18T03:51:00",
+  "number": 188,
+  "question": "What is the main purpose of a DaemonSet?",
+  "options": [
+    {
+      "key": "A",
+      "text": "A DaemonSet ensures that all (or certain) nodes run a copy of a Pod."
+    },
+    {
+      "key": "B",
+      "text": "A DaemonSet ensures that the kubelet is constantly up and running."
+    },
+    {
+      "key": "C",
+      "text": "A DaemonSet ensures that there are as many pods running as specified in the replicas field."
+    },
+    {
+      "key": "D",
+      "text": "A DaemonSet ensures that a process (agent) runs on every node."
+    }
+  ],
+  "answers": {
+    "platform": [
+      "A"
+    ],
+    "community": [
+      "A"
+    ]
+  }
+}

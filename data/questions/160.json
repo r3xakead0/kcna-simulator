@@ -1,0 +1,32 @@
+{
+  "url": "https://www.examtopics.com/discussions/linux-foundation/view/136907-exam-kcna-topic-1-question-28-discussion/",
+  "published_iso": "2024-03-22T07:50:00",
+  "number": 28,
+  "question": "What is the common standard for Service Meshes?",
+  "options": [
+    {
+      "key": "A",
+      "text": "Service Mesh Specification (SMS)"
+    },
+    {
+      "key": "B",
+      "text": "Service Mesh Technology (SMT)"
+    },
+    {
+      "key": "C",
+      "text": "Service Mesh Interface (SMI)"
+    },
+    {
+      "key": "D",
+      "text": "Service Mesh Function (SMF)"
+    }
+  ],
+  "answers": {
+    "platform": [
+      "C"
+    ],
+    "community": [
+      "C"
+    ]
+  }
+}

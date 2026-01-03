@@ -1,0 +1,32 @@
+{
+  "url": "https://www.examtopics.com/discussions/linux-foundation/view/154432-exam-kcna-topic-1-question-80-discussion/",
+  "published_iso": "2025-01-12T14:11:00",
+  "number": 80,
+  "question": "Which of the following is a definition of Hybrid Cloud?",
+  "options": [
+    {
+      "key": "A",
+      "text": "An architecture that uses a combination of services running in public and private data centers, only including data centers from the same cloud provider."
+    },
+    {
+      "key": "B",
+      "text": "A cloud native architecture that uses a combination of services running in public clouds, excluding data centers in different availability zones."
+    },
+    {
+      "key": "C",
+      "text": "A cloud native architecture that uses a combination of services running in different public and private clouds, including on-premises data centers."
+    },
+    {
+      "key": "D",
+      "text": "An architecture that uses a combination of services running in public and private data centers, excluding serverless functions."
+    }
+  ],
+  "answers": {
+    "platform": [
+      "C"
+    ],
+    "community": [
+      "C"
+    ]
+  }
+}

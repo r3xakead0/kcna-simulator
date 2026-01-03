@@ -1,0 +1,32 @@
+{
+  "url": "https://www.examtopics.com/discussions/linux-foundation/view/148291-exam-kcna-topic-1-question-56-discussion/",
+  "published_iso": null,
+  "number": 56,
+  "question": "What is a DaemonSet?",
+  "options": [
+    {
+      "key": "A",
+      "text": "It's a type of workload that ensures a specific set of nodes run a copy of a Pod."
+    },
+    {
+      "key": "B",
+      "text": "It's a type of workload responsible for maintaining a stable set of replica Pods running in any node."
+    },
+    {
+      "key": "C",
+      "text": "It's a type of workload that needs to be run periodically on a given schedule."
+    },
+    {
+      "key": "D",
+      "text": "It's a type of workload that provides guarantees about ordering, uniqueness, and identity of a set of Pods."
+    }
+  ],
+  "answers": {
+    "platform": [
+      "A"
+    ],
+    "community": [
+      "A"
+    ]
+  }
+}

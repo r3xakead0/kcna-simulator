@@ -1,0 +1,32 @@
+{
+  "url": "https://www.examtopics.com/discussions/linux-foundation/view/306735-exam-kcna-topic-1-question-170-discussion/",
+  "published_iso": "2025-07-18T03:50:00",
+  "number": 170,
+  "question": "Which control plane component is responsible for updating the node Ready condition if a node becomes unreachable?",
+  "options": [
+    {
+      "key": "A",
+      "text": "The kube-oroxy."
+    },
+    {
+      "key": "B",
+      "text": "The node controller."
+    },
+    {
+      "key": "C",
+      "text": "The kubelct."
+    },
+    {
+      "key": "D",
+      "text": "The kube-apiserver"
+    }
+  ],
+  "answers": {
+    "platform": [
+      "B"
+    ],
+    "community": [
+      "B"
+    ]
+  }
+}

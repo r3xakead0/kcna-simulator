@@ -1,0 +1,32 @@
+{
+  "url": "https://www.examtopics.com/discussions/linux-foundation/view/157345-exam-kcna-topic-1-question-118-discussion/",
+  "published_iso": "2025-03-01T16:26:00",
+  "number": 118,
+  "question": "Which of the following sentences is true about namespaces in Kubernetes?",
+  "options": [
+    {
+      "key": "A",
+      "text": "You can create a namespace within another namespace in Kubernetes."
+    },
+    {
+      "key": "B",
+      "text": "You can create two resources of the same kind and name in a namespace."
+    },
+    {
+      "key": "C",
+      "text": "The default namespace exists when a new cluster is created."
+    },
+    {
+      "key": "D",
+      "text": "All the objects in the cluster are namespaced by default."
+    }
+  ],
+  "answers": {
+    "platform": [
+      "C"
+    ],
+    "community": [
+      "C"
+    ]
+  }
+}

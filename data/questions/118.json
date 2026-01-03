@@ -1,0 +1,32 @@
+{
+  "url": "https://www.examtopics.com/discussions/linux-foundation/view/135368-exam-kcna-topic-1-question-86-discussion/",
+  "published_iso": "2024-03-07T04:15:00",
+  "number": 86,
+  "question": "Which of the following capabilities are you allowed to add to a container using the Restricted policy?",
+  "options": [
+    {
+      "key": "A",
+      "text": "CHOWN"
+    },
+    {
+      "key": "B",
+      "text": "SYS_CHROOT"
+    },
+    {
+      "key": "C",
+      "text": "SETUID"
+    },
+    {
+      "key": "D",
+      "text": "NET_BIND_SERVICE"
+    }
+  ],
+  "answers": {
+    "platform": [
+      "D"
+    ],
+    "community": [
+      "D"
+    ]
+  }
+}

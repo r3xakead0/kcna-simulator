@@ -1,0 +1,32 @@
+{
+  "url": "https://www.examtopics.com/discussions/linux-foundation/view/147589-exam-kcna-topic-1-question-129-discussion/",
+  "published_iso": "2024-09-15T08:54:00",
+  "number": 129,
+  "question": "Which component of the node is responsible to run workloads?",
+  "options": [
+    {
+      "key": "A",
+      "text": "The kubelet."
+    },
+    {
+      "key": "B",
+      "text": "The kubeproxy."
+    },
+    {
+      "key": "C",
+      "text": "The kube-apiserver."
+    },
+    {
+      "key": "D",
+      "text": "The container runtime."
+    }
+  ],
+  "answers": {
+    "platform": [
+      "D"
+    ],
+    "community": [
+      "D"
+    ]
+  }
+}

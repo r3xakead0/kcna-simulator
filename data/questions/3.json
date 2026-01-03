@@ -1,0 +1,16 @@
+{
+  "url": "https://www.examtopics.com/discussions/linux-foundation/view/118000-exam-kcna-topic-3-question-11-discussion/",
+  "published_iso": "2023-06-14T09:30:00",
+  "number": 3,
+  "question": "What is a primary benefit of using container images in cloud native architectures?",
+  "options": [
+    { "key": "A", "text": "Images eliminate the need for registries" },
+    { "key": "B", "text": "Images guarantee infinite storage capacity" },
+    { "key": "C", "text": "Images provide portability and immutability" },
+    { "key": "D", "text": "Images enforce a single programming language" }
+  ],
+  "answers": {
+    "platform": ["C"],
+    "community": ["C"]
+  }
+}

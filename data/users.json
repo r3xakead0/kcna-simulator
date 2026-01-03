@@ -1,0 +1,14 @@
+[
+  {
+    "username": "demo",
+    "password": "kcna2024!",
+    "name": "Demo Candidate",
+    "role": "candidate"
+  },
+  {
+    "username": "trainer",
+    "password": "teachkcna",
+    "name": "KCNA Trainer",
+    "role": "admin"
+  }
+]

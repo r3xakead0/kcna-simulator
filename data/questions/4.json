@@ -1,0 +1,16 @@
+{
+  "url": "https://www.examtopics.com/discussions/linux-foundation/view/117900-exam-kcna-topic-4-question-02-discussion/",
+  "published_iso": "2023-05-22T14:45:00",
+  "number": 4,
+  "question": "Select the observability signals that are commonly collected in cloud native systems.",
+  "options": [
+    { "key": "A", "text": "Logs" },
+    { "key": "B", "text": "Metrics" },
+    { "key": "C", "text": "Traces" },
+    { "key": "D", "text": "CSS stylesheets" }
+  ],
+  "answers": {
+    "platform": ["A", "B", "C"],
+    "community": ["A", "B", "C"]
+  }
+}

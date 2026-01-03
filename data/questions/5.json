@@ -1,0 +1,16 @@
+{
+  "url": "https://www.examtopics.com/discussions/linux-foundation/view/120021-exam-kcna-topic-5-question-08-discussion/",
+  "published_iso": "2023-10-18T11:12:00",
+  "number": 5,
+  "question": "Which statement best describes GitOps?",
+  "options": [
+    { "key": "A", "text": "A CI/CD strategy using manual approvals only" },
+    { "key": "B", "text": "Using git as the single source of truth for desired state and automating reconciliation" },
+    { "key": "C", "text": "A new programming language for Kubernetes controllers" },
+    { "key": "D", "text": "A replacement for infrastructure as code" }
+  ],
+  "answers": {
+    "platform": ["B"],
+    "community": ["B"]
+  }
+}

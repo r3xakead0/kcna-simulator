@@ -1,0 +1,16 @@
+{
+  "url": "https://www.examtopics.com/discussions/linux-foundation/view/121111-exam-kcna-topic-2-question-03-discussion/",
+  "published_iso": "2024-01-09T10:00:00",
+  "number": 2,
+  "question": "Which CNCF project is primarily focused on container orchestration?",
+  "options": [
+    { "key": "A", "text": "Envoy" },
+    { "key": "B", "text": "Kubernetes" },
+    { "key": "C", "text": "Prometheus" },
+    { "key": "D", "text": "Fluentd" }
+  ],
+  "answers": {
+    "platform": ["B"],
+    "community": ["B"]
+  }
+}

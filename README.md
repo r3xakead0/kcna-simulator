@@ -3,17 +3,24 @@
 ![License](https://img.shields.io/github/license/r3xakead0/kcna-simulator)
 ![Platform](https://img.shields.io/badge/platform-linux%20%7C%20macOS-lightgrey)
 
-A lightweight Next.js (TypeScript) simulator for the Linux Foundation - KCNA exam. It supports local JSON-backed authentication, questions sorted by newest, and detailed result breakdowns.
+A lightweight Next.js (TypeScript) simulator for the Linux Foundation KCNA exam. It uses local JSON files for users and questions, paginates 10 questions per page, sorts items from newest to oldest, and stores the latest result locally for review on the `/results` page.
 
 ## Features
-- Login validated against `data/users.json` (no external services).
-- Questions stored as one JSON file per item under `data/questions/` and served sorted by newest.
-- Exam results highlight correct vs. incorrect answers per question.
-- Jest unit tests for core scoring and user validation logic.
+- Local login verified against `data/users.json` (no external services).
+- Questions stored as one JSON file per item under `data/questions/`, sorted by `published_iso` (newest first).
+- Pagination shows 10 questions at a time; supports single- and multi-select answers.
+- Results are saved to `localStorage` and displayed on a dedicated `/results` page with per-question breakdown.
+- Jest unit tests for scoring and credential validation.
+- Container-ready with the provided `Dockerfile` (works with Podman or Docker).
 
-## Project Structure
-- `data/users.json` – user list for login.
-- `data/questions/*.json` – one file per question; sample format:
+## Data Model
+- `data/users.json`
+  ```json
+  [
+    { "username": "demo", "password": "kcna2026!", "name": "Demo Candidate" }
+  ]
+  ```
+- `data/questions/*.json`
   ```json
   {
     "published_iso": "2023-08-28T15:14:00",
@@ -26,27 +33,26 @@ A lightweight Next.js (TypeScript) simulator for the Linux Foundation - KCNA exa
     "answers": { "platform": ["B"], "community": ["B"] }
   }
   ```
-- API routes:
-  - `api/questions` reads `data/questions/` and returns a set sorted by newest.
+  Use ISO8601 timestamps for `published_iso`; higher/ newer timestamps appear first.
 
-## Getting Started
+## Running Locally
 ```bash
 npm install
 npm run dev
 # open http://localhost:3000
 ```
-Sample credentials: `demo` / `kcna2024!`.
+Sample credentials: `demo` / `kcna2026!` (or any entry in `data/users.json`).
+
+## Results Workflow
+- Submit answers to save the evaluation in `localStorage`.
+- Visit `/results` to see the score and per-question detail (letters + option text).
+- Login state is also stored locally so you return to the exam instead of the login screen.
 
 ## Tests and Linting
-- Run unit tests: `npm test`
-- Lint the project: `npm run lint`
+- Unit tests: `npm test`
+- Lint: `npm run lint`
 
 ## Extending the Question Bank
-1. Add a new JSON file under `data/questions/` following the format above.
-2. Increment the `number` field sequentially.
-3. Restart the dev server to pick up changes when running locally.
-
-## Notes
-- All data and authentication stay local (no remote calls).
-- Dark/light preference is stored in `localStorage`.
-- The UI supports single and multi-select questions based on the answer key count.
+1. Add a JSON file under `data/questions/` following the structure above.
+2. Set `published_iso` to control ordering (newest first) and increment `number` as needed.
+3. Restart the dev server while running locally to pick up new files.

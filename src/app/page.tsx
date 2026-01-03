@@ -2,7 +2,7 @@
 
 import { useEffect, useMemo, useState } from "react";
 import { useRouter } from "next/navigation";
-import { AlertCircle, CheckCircle2, Loader2, ShieldCheck } from "lucide-react";
+import { AlertCircle, CheckCircle2, Loader2 } from "lucide-react";
 import { evaluateAnswers } from "@/lib/evaluation";
 import { getCorrectKeys } from "@/lib/questions";
 import { RESULTS_STORAGE_KEY, USER_STORAGE_KEY } from "@/lib/constants";
@@ -153,40 +153,28 @@ export default function Home() {
   };
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-slate-50 via-slate-100 to-blue-50 px-4 pb-12 dark:from-slate-950 dark:via-slate-900 dark:to-slate-950">
-      <div className="mx-auto flex max-w-6xl flex-col gap-8 pt-10">
-        <header className="flex flex-col gap-4 rounded-3xl border border-white/40 bg-card/70 p-6 shadow-lg shadow-blue-200/50 backdrop-blur dark:border-slate-800/80 dark:bg-slate-900/70 dark:shadow-none sm:flex-row sm:items-center sm:justify-between">
-          <div className="space-y-2">
-            <p className="text-sm uppercase tracking-[0.2em] text-blue-600 dark:text-sky-400">
-              KCNA Simulation
-            </p>
-            <h1 className="text-3xl font-semibold">Linux Foundation - KCNA Exam</h1>
-            <p className="max-w-3xl text-sm text-slate-600 dark:text-slate-300">
-              Practice with curated KCNA-style questions and review your answers instantly.
-            </p>
-          </div>
-          <div className="flex flex-col gap-2 sm:items-end">
-            {user ? (
-              <div className="flex flex-wrap items-center gap-3">
-                <div className="inline-flex items-center gap-2 rounded-full bg-slate-100 px-3 py-1 text-sm font-medium text-slate-700 shadow dark:bg-slate-800 dark:text-slate-200">
-                  <ShieldCheck size={16} />
-                  {user.name}
-                </div>
-                <button
-                  type="button"
-                  onClick={handleLogout}
-                  className="rounded-full border border-slate-300/60 px-3 py-1 text-xs font-semibold text-slate-700 shadow-sm transition hover:border-red-300 hover:text-red-600 dark:border-slate-700 dark:text-slate-200 dark:hover:border-red-600 dark:hover:text-red-300"
-                >
-                  Logout
-                </button>
+    <div className="flex-1 bg-gradient-to-br from-slate-50 via-slate-100 to-blue-50 px-4 pb-12 dark:from-slate-950 dark:via-slate-900 dark:to-slate-950">
+      <div className="mx-auto flex max-w-6xl flex-col gap-8 pt-8">
+        <div className="flex flex-wrap items-center justify-between gap-3">
+          {user ? (
+            <>
+              <div className="rounded-full bg-slate-100 px-3 py-1 text-sm font-medium text-slate-700 shadow dark:bg-slate-800 dark:text-slate-200">
+                Signed in as {user.name}
               </div>
-            ) : (
-              <div className="text-xs text-slate-500 dark:text-slate-400">
-                Sign in to start the simulation
-              </div>
-            )}
-          </div>
-        </header>
+              <button
+                type="button"
+                onClick={handleLogout}
+                className="rounded-full border border-slate-300/60 px-3 py-1 text-xs font-semibold text-slate-700 shadow-sm transition hover:border-red-300 hover:text-red-600 dark:border-slate-700 dark:text-slate-200 dark:hover:border-red-600 dark:hover:text-red-300"
+              >
+                Logout
+              </button>
+            </>
+          ) : (
+            <div className="text-xs text-slate-500 dark:text-slate-400">
+              Sign in to start the simulation
+            </div>
+          )}
+        </div>
 
         <section className="space-y-4">
           {!user && (
@@ -195,11 +183,11 @@ export default function Home() {
               loading={loginLoading}
               error={loginError}
             />
-          )}
+            )}
 
-          {user && (
-            <ExamControlCard
-              onStart={fetchQuestions}
+            {user && (
+              <ExamControlCard
+                onStart={fetchQuestions}
               onSubmit={handleSubmit}
               canSubmit={!!questions.length}
               loading={questionLoading}

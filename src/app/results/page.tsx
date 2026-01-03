@@ -44,32 +44,27 @@ export default function ResultsPage() {
   }, [storedResult]);
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-slate-50 via-slate-100 to-blue-50 px-4 pb-12 dark:from-slate-950 dark:via-slate-900 dark:to-slate-950">
-      <div className="mx-auto flex max-w-5xl flex-col gap-6 pt-10">
-        <header className="flex flex-col gap-3 rounded-3xl border border-white/40 bg-card/80 p-6 shadow-lg shadow-blue-200/40 backdrop-blur dark:border-slate-800 dark:bg-slate-900/80">
-          <div className="flex items-center justify-between">
-            <div>
-              <p className="text-sm uppercase tracking-[0.2em] text-blue-600 dark:text-sky-400">
-                KCNA Simulation
-              </p>
-              <h1 className="text-3xl font-semibold">Results</h1>
-              <p className="text-sm text-slate-600 dark:text-slate-300">
-                Review your score and per-question breakdown.
-              </p>
-            </div>
-            <Link
-              href="/"
-              className="rounded-full border border-slate-200 bg-white px-4 py-2 text-sm font-semibold text-slate-700 shadow-sm transition hover:border-blue-300 dark:border-slate-700 dark:bg-slate-800 dark:text-slate-100 dark:hover:border-sky-600"
-            >
-              Back to exam
-            </Link>
-          </div>
-          {storedResult && (
-            <p className="text-xs text-slate-500 dark:text-slate-400">
-              Generated at {new Date(storedResult.generatedAt).toLocaleString()}
+    <div className="flex-1 bg-gradient-to-br from-slate-50 via-slate-100 to-blue-50 px-4 pb-12 dark:from-slate-950 dark:via-slate-900 dark:to-slate-950">
+      <div className="mx-auto flex max-w-5xl flex-col gap-6 pt-8">
+        <div className="flex items-center justify-between">
+          <div>
+            <h1 className="text-3xl font-semibold text-foreground">Results</h1>
+            <p className="text-sm text-slate-600 dark:text-slate-300">
+              Review your score and per-question breakdown.
             </p>
-          )}
-        </header>
+          </div>
+          <Link
+            href="/"
+            className="rounded-full border border-slate-200 bg-white px-4 py-2 text-sm font-semibold text-slate-700 shadow-sm transition hover:border-blue-300 dark:border-slate-700 dark:bg-slate-800 dark:text-slate-100 dark:hover:border-sky-600"
+          >
+            Back to exam
+          </Link>
+        </div>
+        {storedResult && (
+          <p className="text-xs text-slate-500 dark:text-slate-400">
+            Generated at {new Date(storedResult.generatedAt).toLocaleString()}
+          </p>
+        )}
 
         {error && (
           <div className="flex items-center gap-2 rounded-2xl border border-amber-200 bg-amber-50 px-4 py-3 text-sm text-amber-800 dark:border-amber-900 dark:bg-amber-950/50 dark:text-amber-100">

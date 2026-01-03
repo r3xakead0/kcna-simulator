@@ -14,5 +14,12 @@ export async function loadQuestionsFromDisk(): Promise<Question[]> {
     }),
   );
 
-  return questions.sort((a, b) => a.number - b.number);
+  return questions.sort((a, b) => {
+    const dateB = new Date(b.published_iso).getTime();
+    const dateA = new Date(a.published_iso).getTime();
+    if (dateB === dateA) {
+      return b.number - a.number;
+    }
+    return dateB - dateA;
+  });
 }

@@ -13,6 +13,7 @@ import type {
 import { ThemeToggle } from "@/components/theme-toggle";
 
 type AuthenticatedUser = Pick<UserRecord, "username" | "name" | "role">;
+const PAGE_SIZE = 1;
 
 export default function Home() {
   const [user, setUser] = useState<AuthenticatedUser | null>(null);
@@ -23,10 +24,12 @@ export default function Home() {
   const [evaluation, setEvaluation] = useState<EvaluationResult | null>(null);
   const [questionLoading, setQuestionLoading] = useState(false);
   const [submitError, setSubmitError] = useState<string | null>(null);
+  const [currentPage, setCurrentPage] = useState(1);
 
   useEffect(() => {
     setAnswers({});
     setEvaluation(null);
+    setCurrentPage(1);
   }, [questions]);
 
   const handleLogout = () => {
@@ -35,6 +38,7 @@ export default function Home() {
     setAnswers({});
     setEvaluation(null);
     setSubmitError(null);
+    setCurrentPage(1);
   };
 
   const completion = useMemo(() => {
@@ -44,6 +48,13 @@ export default function Home() {
     ).length;
     return Math.round((answered / questions.length) * 100);
   }, [answers, questions.length]);
+
+  const totalPages = Math.max(1, Math.ceil(questions.length / PAGE_SIZE));
+  const pagedQuestions = useMemo(() => {
+    const start = (currentPage - 1) * PAGE_SIZE;
+    const end = start + PAGE_SIZE;
+    return questions.slice(start, end);
+  }, [questions, currentPage]);
 
   const handleLogin = async (formData: FormData) => {
     setLoginError(null);
@@ -182,7 +193,7 @@ export default function Home() {
 
             {user && questions.length > 0 && (
               <div className="space-y-4">
-                {questions.map((question) => {
+                {pagedQuestions.map((question) => {
                   const correct = getCorrectKeys(question);
                   const isMultiple = correct.length > 1;
                   return (
@@ -199,13 +210,20 @@ export default function Home() {
                     />
                   );
                 })}
+                <Pagination
+                  currentPage={currentPage}
+                  totalPages={totalPages}
+                  onFirst={() => setCurrentPage(1)}
+                  onPrev={() => setCurrentPage((prev) => Math.max(1, prev - 1))}
+                  onNext={() => setCurrentPage((prev) => Math.min(totalPages, prev + 1))}
+                  onLast={() => setCurrentPage(totalPages)}
+                />
               </div>
             )}
           </div>
 
           <aside className="space-y-4">
             <HighlightsPanel evaluation={evaluation} completion={completion} />
-            <InstructionsCard />
             {evaluation && <ResultsPanel evaluation={evaluation} />}
           </aside>
         </section>
@@ -428,13 +446,13 @@ function QuestionCard({
         </span>
       </div>
 
-      <div className="mt-4 grid gap-3 md:grid-cols-2">
+      <div className="mt-4 space-y-3">
         {question.options.map((option) => {
           const isChecked = selected.includes(option.key);
           return (
             <label
               key={option.key}
-              className={`flex cursor-pointer items-start gap-3 rounded-2xl border px-4 py-3 text-sm shadow-sm transition hover:border-blue-300 hover:shadow-md dark:hover:border-sky-700 ${
+              className={`flex cursor-pointer items-center gap-3 rounded-2xl border px-4 py-3 text-sm shadow-sm transition hover:border-blue-300 hover:shadow-md dark:hover:border-sky-700 ${
                 isChecked
                   ? "border-blue-500 bg-blue-50 text-blue-900 dark:border-sky-500 dark:bg-sky-900/50 dark:text-sky-50"
                   : "border-slate-200 bg-white text-slate-900 dark:border-slate-700 dark:bg-slate-800 dark:text-slate-50"
@@ -448,9 +466,9 @@ function QuestionCard({
                 onChange={() => onSelect(option.key)}
                 className="mt-1 h-4 w-4 accent-blue-600 dark:accent-sky-400"
               />
-              <div>
-                <p className="font-semibold">{option.key}</p>
-                <p className="text-slate-700 dark:text-slate-200">{option.text}</p>
+              <div className="flex items-center gap-2 text-left">
+                <span className="font-semibold">{option.key}.</span>
+                <span className="text-slate-700 dark:text-slate-200">{option.text}</span>
               </div>
             </label>
           );
@@ -491,27 +509,10 @@ function HighlightsPanel({
           need another look.
         </p>
         <ul className="list-disc space-y-2 pl-5 text-slate-600 dark:text-slate-300">
-          <li>Randomized question sets per run.</li>
           <li>Supports single and multiple choice items.</li>
           <li>Dark and light modes for long study sessions.</li>
         </ul>
       </div>
-    </div>
-  );
-}
-
-function InstructionsCard() {
-  return (
-    <div className="rounded-3xl border border-dashed border-blue-200 bg-white/70 p-6 text-sm shadow-sm dark:border-sky-800 dark:bg-slate-900/80">
-      <h3 className="text-lg font-semibold text-foreground">How this simulator works</h3>
-      <ol className="mt-3 space-y-2 text-slate-700 dark:text-slate-200">
-        <li>1. Sign in using a user stored in <code>data/users.json</code>.</li>
-        <li>2. Load a fresh question set sourced from <code>data/questions</code>.</li>
-        <li>3. Submit to see correct and incorrect responses instantly.</li>
-      </ol>
-      <p className="mt-3 text-xs text-slate-500 dark:text-slate-400">
-        All content lives in JSON files, making it easy to extend the bank or connect to other tools.
-      </p>
     </div>
   );
 }
@@ -554,6 +555,64 @@ function ResultsPanel({ evaluation }: { evaluation: EvaluationResult }) {
             </p>
           </div>
         ))}
+      </div>
+    </div>
+  );
+}
+
+function Pagination({
+  currentPage,
+  totalPages,
+  onFirst,
+  onPrev,
+  onNext,
+  onLast,
+}: {
+  currentPage: number;
+  totalPages: number;
+  onFirst: () => void;
+  onPrev: () => void;
+  onNext: () => void;
+  onLast: () => void;
+}) {
+  return (
+    <div className="flex items-center justify-between rounded-2xl border border-slate-200 bg-white/70 px-4 py-3 text-sm shadow-sm dark:border-slate-700 dark:bg-slate-900/70">
+      <div className="text-slate-700 dark:text-slate-200">
+        Page {currentPage} of {totalPages}
+      </div>
+      <div className="flex gap-2">
+        <button
+          type="button"
+          onClick={onFirst}
+          disabled={currentPage <= 1}
+          className="rounded-lg border border-slate-200 px-3 py-2 font-medium text-slate-700 shadow-sm transition hover:border-blue-300 disabled:cursor-not-allowed disabled:opacity-50 dark:border-slate-700 dark:text-slate-100 dark:hover:border-sky-600"
+        >
+          First
+        </button>
+        <button
+          type="button"
+          onClick={onPrev}
+          disabled={currentPage <= 1}
+          className="rounded-lg border border-slate-200 px-3 py-2 font-medium text-slate-700 shadow-sm transition hover:border-blue-300 disabled:cursor-not-allowed disabled:opacity-50 dark:border-slate-700 dark:text-slate-100 dark:hover:border-sky-600"
+        >
+          Previous
+        </button>
+        <button
+          type="button"
+          onClick={onNext}
+          disabled={currentPage >= totalPages}
+          className="rounded-lg border border-slate-200 px-3 py-2 font-medium text-slate-700 shadow-sm transition hover:border-blue-300 disabled:cursor-not-allowed disabled:opacity-50 dark:border-slate-700 dark:text-slate-100 dark:hover:border-sky-600"
+        >
+          Next
+        </button>
+        <button
+          type="button"
+          onClick={onLast}
+          disabled={currentPage >= totalPages}
+          className="rounded-lg border border-slate-200 px-3 py-2 font-medium text-slate-700 shadow-sm transition hover:border-blue-300 disabled:cursor-not-allowed disabled:opacity-50 dark:border-slate-700 dark:text-slate-100 dark:hover:border-sky-600"
+        >
+          Last
+        </button>
       </div>
     </div>
   );

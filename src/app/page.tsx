@@ -26,6 +26,7 @@ export default function Home() {
   const [questionLoading, setQuestionLoading] = useState(false);
   const [submitError, setSubmitError] = useState<string | null>(null);
   const [currentPage, setCurrentPage] = useState(1);
+  const [showCorrect, setShowCorrect] = useState<Record<number, boolean>>({});
   const router = useRouter();
 
   useEffect(() => {
@@ -44,6 +45,7 @@ export default function Home() {
     setAnswers({});
     setEvaluation(null);
     setCurrentPage(1);
+    setShowCorrect({});
   }, [questions]);
 
   const handleLogout = () => {
@@ -53,6 +55,7 @@ export default function Home() {
     setEvaluation(null);
     setSubmitError(null);
     setCurrentPage(1);
+    setShowCorrect({});
     if (typeof window !== "undefined") {
       localStorage.removeItem(USER_STORAGE_KEY);
     }
@@ -209,10 +212,12 @@ export default function Home() {
               {pagedQuestions.map((question) => {
                 const correct = getCorrectKeys(question);
                 const isMultiple = correct.length > 1;
+                const isShowingCorrect = showCorrect[question.number] ?? false;
                 return (
                   <QuestionCard
                     key={question.number}
                     question={question}
+                    correctKeys={correct}
                     selected={answers[question.number] ?? []}
                     onSelect={(choice) =>
                       isMultiple
@@ -220,6 +225,13 @@ export default function Home() {
                         : handleOptionSelect(question.number, choice)
                     }
                     isMultiple={isMultiple}
+                    showCorrect={isShowingCorrect}
+                    onToggleCorrect={() =>
+                      setShowCorrect((current) => ({
+                        ...current,
+                        [question.number]: !isShowingCorrect,
+                      }))
+                    }
                   />
                 );
               })}
@@ -382,14 +394,20 @@ function ExamControlCard({
 
 function QuestionCard({
   question,
+  correctKeys,
   selected,
   onSelect,
   isMultiple,
+  showCorrect,
+  onToggleCorrect,
 }: {
   question: Question;
+  correctKeys: string[];
   selected: string[];
   onSelect: (option: string) => void;
   isMultiple: boolean;
+  showCorrect: boolean;
+  onToggleCorrect: () => void;
 }) {
   return (
     <article className="rounded-3xl border border-white/50 bg-card/90 p-6 shadow-lg shadow-blue-200/40 backdrop-blur dark:border-slate-800 dark:bg-slate-900/80">
@@ -410,17 +428,29 @@ function QuestionCard({
         </span>
       </div>
 
+      <div className="mt-3 flex items-center gap-3">
+        <button
+          type="button"
+          onClick={onToggleCorrect}
+          className="rounded-lg border border-slate-200 px-3 py-2 text-xs font-semibold text-slate-700 shadow-sm transition hover:border-emerald-400 hover:text-emerald-700 dark:border-slate-700 dark:text-slate-100 dark:hover:border-emerald-400 dark:hover:text-emerald-200"
+        >
+          {showCorrect ? "Hide correct answer" : "Show correct answer"}
+        </button>
+      </div>
+
       <div className="mt-4 space-y-3">
         {question.options.map((option) => {
           const isChecked = selected.includes(option.key);
+          const isCorrect = showCorrect && correctKeys.includes(option.key);
+          const highlightClasses = isCorrect
+            ? "border-emerald-500 bg-emerald-50 text-emerald-900 dark:border-emerald-500 dark:bg-emerald-900/40 dark:text-emerald-50"
+            : isChecked
+              ? "border-blue-500 bg-blue-50 text-blue-900 dark:border-sky-500 dark:bg-sky-900/50 dark:text-sky-50"
+              : "border-slate-200 bg-white text-slate-900 dark:border-slate-700 dark:bg-slate-800 dark:text-slate-50";
           return (
             <label
               key={option.key}
-              className={`flex cursor-pointer items-center gap-3 rounded-2xl border px-4 py-3 text-sm shadow-sm transition hover:border-blue-300 hover:shadow-md dark:hover:border-sky-700 ${
-                isChecked
-                  ? "border-blue-500 bg-blue-50 text-blue-900 dark:border-sky-500 dark:bg-sky-900/50 dark:text-sky-50"
-                  : "border-slate-200 bg-white text-slate-900 dark:border-slate-700 dark:bg-slate-800 dark:text-slate-50"
-              }`}
+              className={`flex cursor-pointer items-center gap-3 rounded-2xl border px-4 py-3 text-sm shadow-sm transition hover:border-blue-300 hover:shadow-md dark:hover:border-sky-700 ${highlightClasses}`}
             >
               <input
                 type={isMultiple ? "checkbox" : "radio"}
